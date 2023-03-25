@@ -71,6 +71,9 @@
   .nav-items {
     gap: 30px;
   }
+  .home-logo{
+    width: 300px;
+  }
   .about {
     width: 90%;
     padding: 20px 5%;
@@ -88,3 +91,38 @@
 
   }
 }
+@media screen and (max-width: 400px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-items {
+    gap: 30px;
+  }
+  .home-logo{
+    width: 250px;
+  }
+  .dev{
+    width: 60px;
+  }
+  .ui{
+    width: 40px;
+  }
+  .about {
+    width: 90%;
+    padding: 20px 5%;
+  }
+  .about h1 {
+    font-size: 50px;
+    line-height: 0%;
+  }
+  .about p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .why h2{
+    font-size: 40px;
+
+  }
+}
+
