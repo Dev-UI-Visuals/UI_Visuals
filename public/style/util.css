@@ -73,26 +73,22 @@ a {
 .swiper-button-prev::after {
   content: "" !important;
 }
-.leader-swiper .swiper-button-prev,
-.leader-swiper .swiper-button-next {
-  margin-top: -25px;
-  font-size: 50px;
-  color: var(--text-light);
-  transform: translate(0%, -50%);
-}
-.leader-swiper .swiper-button-prev:hover,
-.leader-swiper .swiper-button-next:hover {
-  color: var(--text-main);
-}
-.department-swiper .swiper-button-prev,
-.department-swiper .swiper-button-next {
-  transform: translate(0%, -50%);
+
+.member-swiper .swiper-button-prev,
+.member-swiper  .swiper-button-next {
   margin-top: -30px;
   font-size: 30px;
   color: var(--text-light);
+  background-color: var(--primary-light);
 }
-.department-swiper .swiper-button-prev:hover,
-.department-swiper .swiper-button-next:hover {
+.member-swiper .swiper-button-prev{
+  transform: translate(0%, 0%);
+}
+.member-swiper .swiper-button-next{
+  transform: translate(20%, 0%);
+}
+.member-swiper  .swiper-button-prev:hover,
+.member-swiper  .swiper-button-next:hover {
   color: var(--text-main);
 }
 .testimonial-swiper .swiper-button-prev,
