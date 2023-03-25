@@ -4,11 +4,6 @@
     width: 95%;
     padding: 20px 2.5%;
   }
-  .home-cricle-dots,
-  .home-triangle-dots,
-  .home-triangle {
-    width: 150px;
-  }
   .home-logo{
     width: 350px;
   }
@@ -33,11 +28,6 @@
 @media screen and (max-width: 800px) {
   .nav-items {
     gap: 25px;
-  }
-  .home-cricle-dots,
-  .home-triangle-dots,
-  .home-triangle, .about-pick {
-    display: none;
   }
   .home-logo{
     width: 350px;

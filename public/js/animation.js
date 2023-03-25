@@ -50,32 +50,31 @@ function scrollDown(id) {
     }
 )()
 
-var swiper = new Swiper(".leader-swiper", {
-    slidesPerView: 3,
-    spaceBetween: 40,
-    loop: true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
-})
-var swiper = new Swiper(".department-swiper", {
-    slidesPerView: 4,
+
+var swiper = new Swiper(".member-swiper", {
+    slidesPerView: 5,
     spaceBetween: 0,
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 1500,
         disableOnInteraction: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    }
+    },
+    // breakpoints: {
+    //     1000: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 0,
+    //     },
+    //     600: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 0,
+    //     }
+    // }
 })
+
 var swiper = new Swiper(".testimonial-swiper", {
     slidesPerView: 3,
     spaceBetween: 0,

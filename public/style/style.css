@@ -7,7 +7,6 @@
   --text-main: #3a3a3c;
   --text-light: #6b7070;
 }
-
 .nav {
   width: 90%;
   padding: 20px 5%;
@@ -54,59 +53,27 @@
   justify-content: center;
   padding: 50px 10%;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding-top: 150px;
+  justify-content: space-between;
 }
 .home-logo {
   width: 400px;
   object-fit: contain;
   margin: 20px auto;
 }
-.home-cricle-dots {
-  width: 180px;
-  object-fit: contain;
-  position: absolute;
-  right: 3%;
-  bottom: 5%;
-}
-.home-triangle-dots {
-  width: 180px;
-  object-fit: contain;
-  position: absolute;
-  left: 0%;
-  top: 12%;
-}
-.home-triangle {
-  width: 200px;
-  object-fit: contain;
-  position: absolute;
-  right: 5%;
-  top: 20%;
-}
+
 .home h2 {
   font-size: 60px;
   color: var(--text-main);
   line-height: 80%;
 }
-.home h4 {
+.home h3{
   font-size: 20px;
   color: var(--text-main);
   line-height: 80%;
 }
-.home-icons {
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.home-icon {
-  font-size: 30px;
-  color: var(--text-light);
-  transition: 0.5s;
-  cursor: pointer;
-}
-.home-icon:hover {
-  color: var(--text-main);
-}
+
 .home button {
   padding: 10px 25px;
   border: none;
@@ -241,7 +208,7 @@
   width: 100%;
   background: linear-gradient(var(--primary-mid), var(--primary-main));
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 .team h1 {
   text-align: center;
@@ -255,18 +222,18 @@
 }
 .teacher {
   align-items: center;
-  gap: 60%;
   width: 65%;
   margin: 0px auto;
+  justify-content: space-between;
 }
 .mentor {
   align-items: center;
   gap: 5px;
 }
 .mentor img {
-  width: 200px;
+  width: 240px;
   height: 230px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .team h2 {
   text-align: center;
@@ -285,22 +252,19 @@
   line-height: 80%;
   font-size: 16px;
 }
-.leader-bar {
-  width: 50%;
-  position: relative;
-  height: 250px;
-  overflow-x: hidden;
-}
+
 .leader {
-  position: absolute;
-  gap: 25px;
-  height: 100%;
+  width: 60%;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
 }
-.department {
-  width: 50%;
-  justify-content: space-between;
-  gap: 15%;
-  overflow-x: hidden;
+.heads {
+  width: 60%;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .irr-circle {
   position: absolute;
@@ -310,14 +274,14 @@
   top: 455%;
 }
 .leaders {
-  width: 170px;
-  height: 210px;
+  width: 180px;
+  height: 220px;
   align-items: center;
   gap: 5px;
 }
 .leaders img {
-  width: 170px;
-  height: 160px;
+  width: 200px;
+  height: 210px;
   object-fit: cover;
 }
 .leaders h5 {
@@ -331,25 +295,40 @@
   line-height: 100%;
 }
 .department-team {
-  width: 130px;
-  height: 210px;
+  width: 200px;
+  height: 250px;
   align-items: center;
   gap: 5px;
 }
 .department-team img {
-  width: 130px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
 }
 .department-team h5 {
   color: var(--text-main);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
 }
 .department-team h4 {
   color: var(--secondary-main);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
+}
+.member{
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+.member img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+.member h5{
+  font-size: 16px;
+  color: var(--text-main);
 }
 /* WHY 8 */
 .why {
