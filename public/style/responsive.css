@@ -1,0 +1,88 @@
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    width: 95%;
+    padding: 20px 2.5%;
+  }
+  .home-cricle-dots,
+  .home-triangle-dots,
+  .home-triangle {
+    width: 150px;
+  }
+  .home-logo{
+    width: 380px;
+  }
+  .about {
+    padding: 70px 10%;
+  }
+  .about h1 {
+    font-size: 70px;
+    line-height: 20%;
+  }
+  .about p {
+    width: 90%;
+    font-size: 18px;
+  }
+  .black-circle-dots{
+    width: 160px;
+  }
+  .why h2{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-items {
+    gap: 25px;
+  }
+  .home-cricle-dots,
+  .home-triangle-dots,
+  .home-triangle, .about-pick {
+    display: none;
+  }
+  .home-logo{
+    width: 350px;
+  }
+  .about {
+    width: 90%;
+    padding: 50px 5%;
+  }
+  .about h1 {
+    font-size: 60px;
+    line-height: 10%;
+  }
+  .about p {
+    width: 95%;
+    font-size: 17px;
+    line-height: 120%;
+  }
+  .black-circle-dots{
+    display: none;
+  }
+  .why h2{
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-items {
+    gap: 30px;
+  }
+  .about {
+    width: 90%;
+    padding: 20px 5%;
+  }
+  .about h1 {
+    font-size: 50px;
+    line-height: 0%;
+  }
+  .about p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .why h2{
+    font-size: 40px;
+  }
+}

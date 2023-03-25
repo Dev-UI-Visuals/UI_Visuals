@@ -1,0 +1,113 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+:root {
+  --primary-mid: #fafafa;
+  --primary-main: #ededed;
+  --primary-light: #ffffff;
+  --secondary-main: #74c042;
+  --secondary-light: #73cb43;
+  --text-main: #3a3a3c;
+  --text-light: #6b7070;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgb(247, 247, 247);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 141, 141);
+}
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: transparent;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.green {
+  background-color: var(--secondary-main);
+}
+.light-green {
+  background-color: var(--secondary-light);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+.leader-swiper .swiper-button-prev,
+.leader-swiper .swiper-button-next {
+  margin-top: -25px;
+  font-size: 50px;
+  color: var(--text-light);
+  transform: translate(0%, -50%);
+}
+.leader-swiper .swiper-button-prev:hover,
+.leader-swiper .swiper-button-next:hover {
+  color: var(--text-main);
+}
+.department-swiper .swiper-button-prev,
+.department-swiper .swiper-button-next {
+  transform: translate(0%, -50%);
+  margin-top: -30px;
+  font-size: 30px;
+  color: var(--text-light);
+}
+.department-swiper .swiper-button-prev:hover,
+.department-swiper .swiper-button-next:hover {
+  color: var(--text-main);
+}
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  margin-top: -30px;
+  font-size: 30px;
+  color: var(--text-light);
+}
+.testimonial-swiper .swiper-button-prev {
+  transform: translate(-50%, 0%);
+}
+.testimonial-swiper .swiper-button-next {
+  transform: translate(70%, 0%);
+}
+.testimonial-swiper .swiper-button-prev:hover,
+.testimonial-swiper .swiper-button-next:hover {
+  color: var(--text-main);
+}
