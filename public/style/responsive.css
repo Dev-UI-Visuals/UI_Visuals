@@ -1,14 +1,28 @@
+@media screen and (max-width: 1300px) {
+  .why-item {
+    width: 45%;
+  }
+  .top-events {
+    gap: 2%;
+  }
+  .single-event {
+    width: 300px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .nav {
     width: 95%;
     padding: 20px 2.5%;
   }
-  .home-logo{
+  .home-logo {
     width: 350px;
   }
   .about {
     padding: 70px 10%;
+  }
+  .about-pick {
+    width: 25%;
   }
   .about h1 {
     font-size: 70px;
@@ -18,10 +32,13 @@
     width: 90%;
     font-size: 18px;
   }
-  .black-circle-dots{
+  .black-circle-dots {
     width: 160px;
   }
-  .why h2{
+  .single-event {
+    width: 350px;
+  }
+  .why h2 {
     font-size: 50px;
   }
 }
@@ -29,7 +46,7 @@
   .nav-items {
     gap: 25px;
   }
-  .home-logo{
+  .home-logo {
     width: 350px;
   }
   .about {
@@ -40,15 +57,21 @@
     font-size: 60px;
     line-height: 10%;
   }
+  .about-pick {
+    display: none;
+  }
   .about p {
     width: 95%;
     font-size: 17px;
     line-height: 120%;
   }
-  .black-circle-dots{
+  .black-circle-dots {
     display: none;
   }
-  .why h2{
+  .why-item {
+    width: 400px;
+  }
+  .why h2 {
     font-size: 45px;
   }
 }
@@ -61,7 +84,7 @@
   .nav-items {
     gap: 30px;
   }
-  .home-logo{
+  .home-logo {
     width: 300px;
   }
   .about {
@@ -76,9 +99,11 @@
     width: 100%;
     font-size: 16px;
   }
-  .why h2{
+  .why-item {
+    width: 350px;
+  }
+  .why h2 {
     font-size: 40px;
-
   }
 }
 @media screen and (max-width: 400px) {
@@ -89,13 +114,13 @@
   .nav-items {
     gap: 30px;
   }
-  .home-logo{
+  .home-logo {
     width: 250px;
   }
-  .dev{
+  .dev {
     width: 60px;
   }
-  .ui{
+  .ui {
     width: 40px;
   }
   .about {
@@ -110,9 +135,7 @@
     width: 100%;
     font-size: 16px;
   }
-  .why h2{
+  .why h2 {
     font-size: 40px;
-
   }
 }
-

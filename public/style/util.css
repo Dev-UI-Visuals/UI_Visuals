@@ -69,26 +69,35 @@ a {
 .light-green {
   background-color: var(--secondary-light);
 }
+.header-swiper {
+  width: 100% !important;
+  height: 100vh;
+  position: absolute !important;
+  top: 0px;
+  z-index: 0;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: "" !important;
 }
 
+
 .member-swiper .swiper-button-prev,
-.member-swiper  .swiper-button-next {
+.member-swiper .swiper-button-next {
   margin-top: -30px;
   font-size: 30px;
   color: var(--text-light);
   background-color: var(--primary-light);
 }
-.member-swiper .swiper-button-prev{
+.member-swiper .swiper-button-prev {
   transform: translate(0%, 0%);
 }
-.member-swiper .swiper-button-next{
+.member-swiper .swiper-button-next {
   transform: translate(20%, 0%);
 }
-.member-swiper  .swiper-button-prev:hover,
-.member-swiper  .swiper-button-next:hover {
+.member-swiper .swiper-button-prev:hover,
+.member-swiper .swiper-button-next:hover {
   color: var(--text-main);
 }
 .testimonial-swiper .swiper-button-prev,

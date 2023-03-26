@@ -13,42 +13,7 @@ function scrollDown(id) {
         }
     )
 }
-(
-    function () {
-        var indx = 0;
-        var imageList = [
-            {
-                img: "/image/Code_Bricks_Event_1.jpg",
-                position: "center center"
-            },
-            {
-                img: "/image/Code_Bricks_Event_2.png",
-                position: "center top"
-            },
-            {
-                img: "/image/Metting.png",
-                position: "center center"
-            }
-        ];
-        var element = document.getElementById("bg");
-        element.style.backgroundSize = "cover";
-        element.style.backgroundRepeat = "no-repeat";
-        element.style.background = `linear-gradient(rgb(237, 237, 237, 1),rgb(237, 237, 237, 0.6),rgb(237, 237, 237, 1)),url(${imageList[indx].img})`;
-        element.style.backgroundPosition = `${imageList[indx].position}`;
-        setInterval(function () {
-            if (indx < imageList.length) {
-                element.style.backgroundSize = "fit";
-                element.style.background = `linear-gradient(rgb(237, 237, 237, 1),rgb(237, 237, 237, 0.6),rgb(237, 237, 237, 1)),url(${imageList[indx].img})`;
-                element.style.backgroundPosition = `${imageList[indx].position}`;
-                element.style.backgroundRepeat = "no-repeat";
-                indx = indx + 1;
-            } else {
-                indx = 0;
-            }
-        }, 3000)
 
-    }
-)()
 
 
 var swiper = new Swiper(".member-swiper", {
@@ -98,19 +63,16 @@ var swiper = new Swiper(".testimonial-swiper", {
     //     }
     // }
 })
+var swiper = new Swiper(".header-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+})
 
-var indx = 0;
-function nextLeader() {
-    indx = indx + 1;
-    if (indx < 6) {
-        var element = document.getElementById("leader");
-        element.style.marginLeft = `-${indx * 170}px`;
-    } else {
-        indx = 0;
-        var element = document.getElementById("leader");
-        element.style.marginLeft = `0px`;
-    }
-}
 
 gsap.fromTo("#nav", {
     backgroundColor: "transparent"
