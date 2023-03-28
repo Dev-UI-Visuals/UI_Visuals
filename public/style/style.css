@@ -162,13 +162,6 @@
   font-size: 60px;
   color: var(--secondary-main);
 }
-.department-pick {
-  position: absolute;
-  top: 335vh;
-  width: 150px;
-  right: 25vw;
-  object-fit: contain;
-}
 .departments-container {
   width: 80%;
   margin: 0px auto;
@@ -231,7 +224,7 @@
 .team h2 {
   text-align: center;
   font-size: 40px;
-  line-height: 75%;
+  line-height: 130%;
   background-image: linear-gradient(var(--text-main), var(--text-light));
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -262,13 +255,6 @@
   margin: 0px auto;
   flex-wrap: wrap;
   justify-content: center;
-}
-.irr-circle {
-  position: absolute;
-  right: 25vw;
-  width: 120px;
-  object-fit: cover;
-  top: 445vh;
 }
 .leaders {
   width: 180px;

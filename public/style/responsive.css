@@ -8,12 +8,17 @@
   .single-event {
     width: 300px;
   }
+  .mentor img{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width:800px) {
   .less{
     display: none;
   }
-  
+
 }
 @media screen and (max-width: 1000px) {
   .nav {
@@ -37,6 +42,15 @@
     width: 90%;
     font-size: 18px;
   }
+  .counter {
+    width: 60%;
+  }
+  .counter-iteam h4{
+    font-size: 20px;
+  }
+  .counter-iteam h3 {
+    font-size: 55px;
+  }
   .black-circle-dots {
     width: 160px;
   }
@@ -45,6 +59,11 @@
   }
   .why h2 {
     font-size: 50px;
+  }
+  .mentor img{
+    width: 180px;
+    height: 170px;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 800px) {
@@ -76,6 +95,15 @@
     font-size: 17px;
     line-height: 120%;
   }
+  .counter {
+    width: 70%;
+  }
+  .counter-iteam h4{
+    font-size: 18px;
+  }
+  .counter-iteam h3 {
+    font-size: 45px;
+  }
   .black-circle-dots {
     display: none;
   }
@@ -84,6 +112,11 @@
   }
   .why h2 {
     font-size: 45px;
+  }
+  .mentor img{
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
   }
 }
 /* ok */
@@ -109,12 +142,26 @@
   .about p {
     width: 100%;
     font-size: 16px;
+  } 
+  .counter {
+    width: 80%;
+  }
+  .counter-iteam h4{
+    font-size: 17px;
+  }
+  .counter-iteam h3 {
+    font-size: 40px;
   }
   .why-item {
     width: 350px;
   }
   .why h2 {
     font-size: 40px;
+  }
+  .mentor img{
+    width: 140px;
+    height: 150px;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 400px) {
@@ -146,7 +193,21 @@
     width: 100%;
     font-size: 16px;
   }
+  .counter {
+    width: 90%;
+  }
+  .counter-iteam h4{
+    font-size: 16px;
+  }
+  .counter-iteam h3 {
+    font-size: 35px;
+  }
   .why h2 {
     font-size: 40px;
+  }
+  .mentor img{
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
   }
 }
