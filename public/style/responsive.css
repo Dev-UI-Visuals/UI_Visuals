@@ -34,9 +34,12 @@
   .about-pick {
     width: 25%;
   }
-  .about h1 {
+  .about h1,.event h1 {
     font-size: 70px;
     line-height: 20%;
+  }
+  .team h1{
+    font-size: 70px;
   }
   .about p {
     width: 90%;
@@ -57,7 +60,7 @@
   .single-event {
     width: 350px;
   }
-  .why h2 {
+  .why h2,.departments h2 {
     font-size: 50px;
   }
   .mentor img{
@@ -73,13 +76,16 @@
   .home-logo {
     width: 350px;
   }
-  .about {
+  .about ,.team,.event{
     width: 90%;
     padding: 50px 5%;
   }
-  .about h1 {
+  .about h1,.event h1  {
     font-size: 60px;
     line-height: 10%;
+  }
+  .team h1{
+    font-size: 60px;
   }
   .more{
     display: none;
@@ -110,13 +116,13 @@
   .why-item {
     width: 400px;
   }
-  .why h2 {
+  .why h2 ,.departments h2 {
     font-size: 45px;
   }
-  .mentor img{
-    width: 150px;
-    height: 160px;
-    object-fit: cover;
+  .teacher{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
   }
 }
 /* ok */
@@ -131,11 +137,14 @@
   .home-logo {
     width: 300px;
   }
-  .about {
+  .about,.event{
     width: 90%;
     padding: 20px 5%;
   }
-  .about h1 {
+  .team h1{
+    font-size: 50px;
+  }
+  .about h1,.team h1, .event h1  {
     font-size: 50px;
     line-height: 0%;
   }
@@ -155,13 +164,8 @@
   .why-item {
     width: 350px;
   }
-  .why h2 {
+  .why h2 ,.departments h2 {
     font-size: 40px;
-  }
-  .mentor img{
-    width: 140px;
-    height: 150px;
-    object-fit: cover;
   }
 }
 @media screen and (max-width: 400px) {
@@ -170,7 +174,7 @@
     gap: 10px;
   }
   .nav-items {
-    gap: 30px;
+    gap: 20px;
   }
   .home-logo {
     width: 250px;
@@ -181,11 +185,11 @@
   .ui {
     width: 40px;
   }
-  .about {
+  .about, .team, .event{
     width: 90%;
     padding: 20px 5%;
   }
-  .about h1 {
+  .about h1, .event h1  {
     font-size: 50px;
     line-height: 0%;
   }
@@ -202,12 +206,7 @@
   .counter-iteam h3 {
     font-size: 35px;
   }
-  .why h2 {
+  .why h2,.team h1,.departments h2 {
     font-size: 40px;
-  }
-  .mentor img{
-    width: 120px;
-    height: 130px;
-    object-fit: cover;
   }
 }
