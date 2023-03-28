@@ -73,62 +73,15 @@ var swiper = new Swiper(".header-swiper", {
     },
 })
 
+var navElements = document.getElementById("#nav");
+window.addEventListener('scroll', function () {
+    const offset = window.pageYOffset;
 
-gsap.fromTo("#nav", {
-    backgroundColor: "transparent"
-}, {
-    backgroundColor: "#fafafa",
-    duration: .1,
-    scrollTrigger: {
-        trigger: "#nav",
-        start: "100% top",
-        end: "110% 13%",
-        onEnter: () => {
-            gsap.fromTo("#nav", {
-                backgroundColor: "#fafafa"
-            }, {
-                backgroundColor: "transparent",
-                duration: .1,
-                scrollTrigger: {
-                    trigger: "#nav",
-                }
-            })
-        },
-        onEnterBack: () => {
-            gsap.fromTo("#nav", {
-                backgroundColor: "#fafafa"
-            }, {
-                backgroundColor: "transparent",
-                duration: .1,
-                scrollTrigger: {
-                    trigger: "#nav",
-                }
-            })
-        },
-        onLeaveBack: () => {
-            gsap.fromTo("#nav", {
-                backgroundColor: "#fafafa"
-            }, {
-                backgroundColor: "transparent",
-                duration: .1,
-                scrollTrigger: {
-                    trigger: "#nav",
-                }
-            })
-        },
-        onLeave: () => {
-            gsap.fromTo("#nav", {
-                backgroundColor: "transparent"
-            }, {
-                backgroundColor: "#fafafa",
-                duration: .1,
-                scrollTrigger: {
-                    trigger: "#nav",
-                }
-            })
-        }
-    }
-})
+    if (offset > 50)
+        nav.classList.add('white-nav')
+    else
+        nav.classList.remove('white-nav')
+});
 
 gsap.fromTo("#about-head-fade", {
     opacity: 0

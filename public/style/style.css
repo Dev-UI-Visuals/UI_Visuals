@@ -15,6 +15,9 @@
   position: fixed;
   top: 0px;
   z-index: 4;
+  background-color: transparent;
+}
+.white-nav {
   background-color: var(--primary-mid);
 }
 .nav-img {
@@ -47,14 +50,14 @@
   width: 100%;
   height: 100vh;
 }
-.header-image{
+.header-image {
   width: 100%;
   height: 100vh;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
-.home { 
+.home {
   width: 80%;
   justify-content: center;
   padding: 50px 10%;
@@ -75,7 +78,7 @@
   color: var(--text-main);
   line-height: 80%;
 }
-.home h3{
+.home h3 {
   font-size: 20px;
   color: var(--text-main);
   line-height: 80%;
@@ -95,31 +98,7 @@
 .home button:hover {
   background-color: var(--secondary-main);
 }
-.counter {
-  background: linear-gradient(var(--primary-mid), var(--primary-main));
-  padding: 10px 0px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 5%;
-}
-.counter-item {
-  padding: 5px 30px 10px 30px;
-  align-items: center;
-  color: var(--text-main);
-  border-radius: 10px;
-}
-.counter-item h4 {
-  font-size: 20px;
-  line-height: 80%;
-}
-.counter-item h3 {
-  font-size: 50px;
-  line-height: 80%;
-}
-.counter-item i {
-  font-size: 40px;
-}
+
 .about {
   width: 80%;
   background: linear-gradient(var(--primary-main), var(--primary-mid));
@@ -143,25 +122,32 @@
   width: 300px;
   object-fit: contain;
   position: absolute;
-  top: 125%;
+  top: 100vh;
   left: 2%;
 }
-.about-images {
+.counter {
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter-iteam {
   align-items: center;
   gap: 20px;
 }
-.about-images img {
-  object-fit: cover;
+.counter-iteam h4 {
+  font-size: 25px;
+  color: var(--text-light);
+  line-height: 80%;
 }
-.about-images-line {
-  width: 1px;
-  height: 45px;
-  background-color: var(--text-light);
+.counter-iteam h3 {
+  font-size: 60px;
+  line-height: 80%;
+  color: var(--text-main);
 }
 .black-circle-dots {
   position: absolute;
   right: 5%;
-  top: 210%;
+  top: 200%;
   object-fit: contain;
 }
 /* Department */
@@ -178,9 +164,9 @@
 }
 .department-pick {
   position: absolute;
-  top: 335%;
+  top: 335vh;
   width: 150px;
-  right: 27%;
+  right: 25vw;
   object-fit: contain;
 }
 .departments-container {
@@ -238,8 +224,8 @@
   gap: 5px;
 }
 .mentor img {
-  width: 240px;
-  height: 230px;
+  width: 220px;
+  height: 200px;
   object-fit: cover;
 }
 .team h2 {
@@ -279,21 +265,42 @@
 }
 .irr-circle {
   position: absolute;
-  right: 25%;
+  right: 25vw;
   width: 120px;
   object-fit: cover;
-  top: 455%;
+  top: 445vh;
 }
 .leaders {
   width: 180px;
   height: 220px;
   align-items: center;
   gap: 5px;
+  overflow: hidden;
 }
 .leaders img {
-  width: 200px;
-  height: 210px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
+}
+.leaders:hover .links-card {
+  height: 180px;
+}
+.links-card i {
+  color: white;
+  font-size: 25px;  
+}
+.links-card {
+  gap: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 180px;
+  height: 0px;
+  background-color: rgb(56, 54, 54, 0.3);
+  transition: .5s;
+  cursor: pointer;
 }
 .leaders h5 {
   color: var(--text-main);
@@ -326,18 +333,18 @@
   font-size: 16px;
   line-height: 100%;
 }
-.member{
+.member {
   width: 200px;
   height: 200px;
   align-items: center;
   justify-content: space-between;
 }
-.member img{
+.member img {
   width: 180px;
   height: 180px;
   object-fit: cover;
 }
-.member h5{
+.member h5 {
   font-size: 16px;
   color: var(--text-main);
 }
@@ -448,7 +455,6 @@
   width: 150px;
   cursor: pointer;
   margin: 0px auto;
-  margin-top: 1em;
   transform: translate(0px, 50%);
   transition: 0.5s;
 }
@@ -489,36 +495,36 @@
   background-color: #e2e2e2;
   gap: 20px;
 }
-.event-header{
+.event-header {
   width: 60%;
   height: 100%;
   align-items: flex-start;
   gap: 5px;
-
 }
-.more-info-event img{
+.more-info-event img {
   width: 40%;
   height: 100%;
   object-fit: cover;
 }
-.event-header h2{
+.event-header h2 {
   font-size: 30px;
   color: var(--text-main);
+  line-height: 100%;
 }
-.event-header p{
+.event-header p {
   color: var(--text-main);
   font-size: 16px;
   line-height: 120%;
 }
-.event-header button{
+.event-header button {
   border: none;
   background-color: var(--text-light);
   color: var(--primary-light);
   padding: 10px 40px;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.event-header button:hover{
+.event-header button:hover {
   background-color: var(--text-main);
 }
 /* Testonomial */
@@ -595,7 +601,9 @@
   padding: 80px 0px;
   gap: 10px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 65vh;
+  justify-content: space-between;
 }
 .contact h1 {
   font-size: 90px;
@@ -619,26 +627,11 @@
   margin: 25px 0px;
   align-items: center;
 }
-.crr-2 {
-  width: 180px;
-  object-fit: contain;
+.footer-line {
+  width: 100%;
   position: absolute;
-  left: -2%;
-  bottom: 70%;
-}
-.crr-1 {
-  width: 250px;
+  bottom: -20px;
   object-fit: contain;
-  position: absolute;
-  right: 0%;
-  bottom: 60%;
-}
-.footer-dot {
-  width: 180px;
-  object-fit: contain;
-  position: absolute;
-  right: 5%;
-  bottom: 2%;
 }
 .footer-icons i {
   color: var(--primary-main);

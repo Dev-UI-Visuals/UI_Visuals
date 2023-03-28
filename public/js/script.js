@@ -30,11 +30,11 @@ function seeMoreEvent(num) {
     var html = `<img src="${moreEvents[num - 1].img}"/>
     <div class="flex-col event-header">
         <h2>${moreEvents[num - 1].title}</h2>
-        <div class="flex-row ">
+        <div class="flex-row " style="align-items:center;gap:5px">
             <i class="uil uil-location-point"></i>
             <h4 style="font-size: 14px">${moreEvents[num - 1].location}</h4>
         </div>
-        <div class="flex-row ">
+        <div class="flex-row " style="align-items:center;gap:5px">
             <i class="uil uil-calendar-alt"></i>
             <h4 style="font-size: 14px">${moreEvents[num - 1].date}</h4>
         </div>

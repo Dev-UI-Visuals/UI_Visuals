@@ -9,7 +9,12 @@
     width: 300px;
   }
 }
-
+@media screen and (min-width:800px) {
+  .less{
+    display: none;
+  }
+  
+}
 @media screen and (max-width: 1000px) {
   .nav {
     width: 95%;
@@ -56,6 +61,12 @@
   .about h1 {
     font-size: 60px;
     line-height: 10%;
+  }
+  .more{
+    display: none;
+  }
+  .less{
+    display: block;
   }
   .about-pick {
     display: none;
