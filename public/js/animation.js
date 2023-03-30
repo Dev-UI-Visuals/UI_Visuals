@@ -98,6 +98,52 @@ window.addEventListener('scroll', function () {
     else
         nav.classList.remove('white-nav')
 });
+var departmentCounter = document.getElementById("department-counter");
+var memberCounter = document.getElementById("member-counter");
+var eventsCounter = document.getElementById("events-counter");
+
+function counter(element,maxNumber,delay){
+    var number = 0;
+    element.innerText = number;
+    const interval = setInterval(function(){
+        element.innerText = number;
+        if(number <maxNumber){
+            number++;
+        }else{
+            clearInterval(interval);
+        }
+    },delay)
+}
+
+
+gsap.fromTo("#department-counter",{},{
+    scrollTrigger:{
+        trigger:"#department-counter",
+        start:"bottom 95%",
+        onEnter:()=>{
+            counter(departmentCounter,8,100);
+        }
+    }
+})
+gsap.fromTo("#member-counter",{},{
+    scrollTrigger:{
+        trigger:"#member-counter",
+        start:"bottom 95%",
+        onEnter:()=>{
+            counter(memberCounter,66,15);
+        }
+    }
+})
+gsap.fromTo("#events-counter",{},{
+    scrollTrigger:{
+        trigger:"#events-counter",
+        start:"bottom 95%",
+        onEnter:()=>{
+            counter(eventsCounter,3,250);
+        }
+    }
+})
+
 
 gsap.fromTo("#about-head-fade", {
     opacity: 0
