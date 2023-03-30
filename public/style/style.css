@@ -174,6 +174,7 @@
   background-color: #eaf1e6;
   padding: 20px;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  
 }
 .department-item img {
   width: 40px;
@@ -261,7 +262,6 @@
   height: 220px;
   align-items: center;
   gap: 5px;
-  overflow: hidden;
 }
 .leaders img {
   width: 180px;
@@ -273,6 +273,10 @@
 }
 .links-card i {
   color: white;
+  font-size: 0px;  
+  transition: .5s;
+}
+.leaders:hover .links-card i{
   font-size: 25px;  
 }
 .links-card {
@@ -284,7 +288,7 @@
   position: absolute;
   width: 180px;
   height: 0px;
-  background-color: rgb(56, 54, 54, 0.3);
+  background-color: rgb(56, 54, 54, 0.5);
   transition: .5s;
   cursor: pointer;
 }
@@ -319,6 +323,32 @@
   font-size: 16px;
   line-height: 100%;
 }
+
+.department-links-card{
+  gap: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 180px;
+  height: 0px;
+  background-color: rgb(56, 54, 54, 0.5);
+  transition: .5s;
+  cursor: pointer;
+}
+.department-links-card i {
+  color: white;
+  font-size: 0px;  
+  transition: .5s;
+}
+.department-team:hover .department-links-card{
+  height: 180px;
+}
+.department-team:hover i{
+  font-size: 25px;
+}
+
 .member {
   width: 200px;
   height: 200px;
@@ -333,6 +363,30 @@
 .member h5 {
   font-size: 16px;
   color: var(--text-main);
+}
+.member-links-card{
+  gap: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 180px;
+  height: 0px;
+  background-color: rgb(56, 54, 54, 0.5);
+  transition: .5s;
+  cursor: pointer;
+}
+.member-links-card i{
+  color: white;
+  font-size: 0px;  
+  transition: .5s;
+}
+.member:hover .member-links-card{
+  height: 175px;
+}
+.member:hover i{
+  font-size: 25px;
 }
 /* WHY 8 */
 .why {
@@ -477,9 +531,13 @@
 .more-info-event {
   transition: 0.5s;
   width: 75%;
-  height: 0px;
+  height: 400px;
   background-color: #e2e2e2;
   gap: 20px;
+  display: none;
+  opacity: 0;
+  padding: 25px 2.5%;
+  justify-content: space-between;
 }
 .event-header {
   width: 60%;

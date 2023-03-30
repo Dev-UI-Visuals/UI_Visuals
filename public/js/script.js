@@ -23,10 +23,11 @@ var moreEvents = [{
     date: "2023-04-23"
 }];
 
+
 function seeMoreEvent(num) {
     var elemet = document.getElementById("more-info-event");
-    elemet.style.height = "400px";
-    elemet.style.padding = "20px 2.5%";
+   elemet.style.opacity = 1;
+   elemet.style.display = "flex";
     var html = `<img src="${moreEvents[num - 1].img}"/>
     <div class="flex-col event-header">
         <h2>${moreEvents[num - 1].title}</h2>
@@ -60,16 +61,16 @@ function seeLess() {
     var elemet = document.getElementById("more-info-event");
     elemet.innerHTML = "";
     setTimeout(function () {
-        elemet.style.height = "0px";
-        elemet.style.padding = "0px 0px";
-    },100);
-        gsap.to(window,
-            {
-                duration: .4,
-                scrollTo: {
-                    y: "#event",
-                    offsetY: 0
-                }
+        elemet.style.opacity = 0;
+        elemet.style.display = "none";
+    }, 100);
+    gsap.to(window,
+        {
+            duration: .4,
+            scrollTo: {
+                y: "#event",
+                offsetY: 0
             }
-        )
+        }
+    )
 }

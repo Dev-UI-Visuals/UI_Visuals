@@ -38,6 +38,9 @@
     font-size: 70px;
     line-height: 20%;
   }
+  .why-item h3{
+    font-size: 25px;
+  }
   .team h1{
     font-size: 70px;
   }
@@ -60,13 +63,22 @@
   .single-event {
     width: 350px;
   }
+  .more-info-event{
+    width: 85%;
+  }
   .why h2,.departments h2 {
     font-size: 50px;
+  }
+  .departments-container{
+    width: 85%;
   }
   .mentor img{
     width: 180px;
     height: 170px;
     object-fit: cover;
+  }
+  .department-item {
+    width: 280px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -83,6 +95,12 @@
   .about h1,.event h1  {
     font-size: 60px;
     line-height: 10%;
+  }
+  .why-item h3{
+    font-size: 22px;
+  }
+  .why-item img{
+    width: 35px;
   }
   .team h1{
     font-size: 60px;
@@ -119,10 +137,43 @@
   .why h2 ,.departments h2 {
     font-size: 45px;
   }
+  .departments-container{
+    width: 90%;
+  }
+  .department-item img{
+    width: 35px;
+  }
   .teacher{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+  }
+  .department-item {
+    width: 350px;
+  }
+  .more-info-event{
+    flex-direction: column;
+    width: 95%;
+    gap: 5px;
+    height: 500px;
+  }
+  .more-info-event img{
+    width: 100%;
+    height: 40%;
+  }
+  .event-header{
+    justify-content: space-between;
+  }
+  .event-header h2 {
+    font-size: 22px;
+  }
+  .event-header p{
+    font-size: 14px;
+  }
+  .event-header{
+    width: 100%;
+    height: 60%;
+    gap: 0px;
   }
 }
 /* ok */
@@ -164,8 +215,17 @@
   .why-item {
     width: 350px;
   }
+  .why-item img{
+    width: 35px;
+  }
+  .why-item p{
+    font-size: 16px;
+  }
   .why h2 ,.departments h2 {
     font-size: 40px;
+  }
+  .departments-container{
+    width: 95%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -206,7 +266,19 @@
   .counter-iteam h3 {
     font-size: 35px;
   }
+  .why-item p{
+    font-size: 15px;
+  }
   .why h2,.team h1,.departments h2 {
     font-size: 40px;
+  }
+  .single-event{
+    height: 530px;
+  }
+  .single-event-content {
+    height: calc(500px - 230px);
+  }
+  .more-info-event{
+    height: 600px;
   }
 }
