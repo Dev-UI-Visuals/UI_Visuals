@@ -451,18 +451,7 @@
   -moz-text-fill-color: transparent;
   letter-spacing: -1px;
 }
-.past-events {
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  gap: 30px;
-  justify-content: center;
-}
-.past-event {
-  width: 250px;
-  height: 250px;
-  background-color: var(--text-light);
-}
+
 .top-events {
   width: 80%;
   margin: 0px auto;
