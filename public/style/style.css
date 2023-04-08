@@ -574,19 +574,25 @@
   line-height: 80%;
 }
 .single-testimonial{
-  width: 60%;
+  width: 55%;
   align-items: center;
   gap: 10px;
 }
 .single-testimonial img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 100%;
 }
-.single-testimonial h4{
+.testonomial h3{
   font-size: 25px;
   color: var(--text-main);
+  line-height: 100%;
+}
+.single-testimonial h4{
+  font-size: 20px;
+  color: var(--text-light);
+  line-height: 100%;
 }
 .single-testimonial P {
   line-height: 120%;

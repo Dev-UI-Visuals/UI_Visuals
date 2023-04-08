@@ -42,9 +42,10 @@ var swiper = new Swiper(".member-swiper", {
 })
 
 var swiper = new Swiper(".testimonial-swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
+    centeredSlides: true,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -54,30 +55,6 @@ var swiper = new Swiper(".testimonial-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-        },
-        900: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-        },
-        700: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        500: {
-            slidesPerView: 1,
-            spaceBetween: 50,
-            centeredSlides: true,
-        },
-        100: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-            centeredSlides: true,
-        }
-    }
 })
 var swiper = new Swiper(".header-swiper", {
     slidesPerView: 1,
