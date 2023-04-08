@@ -174,7 +174,7 @@
   background-color: #eaf1e6;
   padding: 20px;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;  
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 .department-item img {
   width: 40px;
@@ -273,11 +273,11 @@
 }
 .links-card i {
   color: white;
-  font-size: 0px;  
-  transition: .5s;
+  font-size: 0px;
+  transition: 0.5s;
 }
-.leaders:hover .links-card i{
-  font-size: 25px;  
+.leaders:hover .links-card i {
+  font-size: 25px;
 }
 .links-card {
   gap: 10px;
@@ -289,7 +289,7 @@
   width: 180px;
   height: 0px;
   background-color: rgb(56, 54, 54, 0.5);
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .leaders h5 {
@@ -324,7 +324,7 @@
   line-height: 100%;
 }
 
-.department-links-card{
+.department-links-card {
   gap: 10px;
   flex-direction: row;
   display: flex;
@@ -334,18 +334,18 @@
   width: 180px;
   height: 0px;
   background-color: rgb(56, 54, 54, 0.5);
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .department-links-card i {
   color: white;
-  font-size: 0px;  
-  transition: .5s;
+  font-size: 0px;
+  transition: 0.5s;
 }
-.department-team:hover .department-links-card{
+.department-team:hover .department-links-card {
   height: 180px;
 }
-.department-team:hover i{
+.department-team:hover i {
   font-size: 25px;
 }
 
@@ -364,7 +364,7 @@
   font-size: 16px;
   color: var(--text-main);
 }
-.member-links-card{
+.member-links-card {
   gap: 10px;
   flex-direction: row;
   display: flex;
@@ -374,18 +374,18 @@
   width: 180px;
   height: 0px;
   background-color: rgb(56, 54, 54, 0.5);
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.member-links-card i{
+.member-links-card i {
   color: white;
-  font-size: 0px;  
-  transition: .5s;
+  font-size: 0px;
+  transition: 0.5s;
 }
-.member:hover .member-links-card{
+.member:hover .member-links-card {
   height: 175px;
 }
-.member:hover i{
+.member:hover i {
   font-size: 25px;
 }
 /* WHY 8 */
@@ -573,8 +573,14 @@
   letter-spacing: -2px;
   line-height: 80%;
 }
-.single-testimonial{
-  width: 55%;
+.testimonial-swiper {
+  width: 80%;
+}
+.testimonial-swiper .swiper-wrapper {
+  margin-left: calc(20%);
+}
+.single-testimonial {
+  width: 60%;
   align-items: center;
   gap: 10px;
 }
@@ -584,13 +590,13 @@
   object-fit: cover;
   border-radius: 100%;
 }
-.testonomial h3{
+.testonomial h3 {
   font-size: 25px;
   color: var(--text-main);
   line-height: 100%;
 }
-.single-testimonial h4{
-  font-size: 20px;
+.single-testimonial h4 {
+  font-size: 18px;
   color: var(--text-light);
   line-height: 100%;
 }
@@ -598,7 +604,20 @@
   line-height: 120%;
   font-size: 16px;
   text-align: center;
-  color:var(--text-light);
+  color: var(--text-light);
+}
+.testimonial-icons {
+  gap: 10px;
+}
+.testimonial-icons i {
+  color: var(--text-light);
+  font-size: 25px;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.testimonial-icons i:hover {
+  color: var(--text-main);
 }
 /* CONTACT */
 .contact {

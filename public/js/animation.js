@@ -15,13 +15,12 @@ function scrollDown(id) {
 }
 
 
-
-var swiper = new Swiper(".member-swiper", {
+var MemberSwiper = new Swiper(".member-swiper", {
     slidesPerView: 5,
     spaceBetween: 0,
     loop: true,
     autoplay: {
-        delay: 1500,
+        delay: 1200,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
@@ -39,15 +38,31 @@ var swiper = new Swiper(".member-swiper", {
     //         spaceBetween: 0,
     //     }
     // }
-})
+});
+MemberSwiper.autoplay.stop();
 
-var swiper = new Swiper(".testimonial-swiper", {
+gsap.fromTo("#member", {}, {
+    scrollTrigger: {
+        trigger: "#member",
+        start: "bottom 80%",
+        onEnter: () => {
+            MemberSwiper.autoplay.start();
+        },
+        onLeave: () => {
+            MemberSwiper.autoplay.pause();
+        },
+        onEnterBack: () => {
+            MemberSwiper.autoplay.resume();
+        },
+    }
+})
+var TestiomialSwiper = new Swiper(".testimonial-swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
@@ -55,8 +70,25 @@ var swiper = new Swiper(".testimonial-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+TestiomialSwiper.autoplay.stop();
+gsap.fromTo("#testimonial", {}, {
+    scrollTrigger: {
+        trigger: "#testimonial",
+        start: "center bottom",
+        onEnter: () => {
+            TestiomialSwiper.autoplay.start();
+        },
+        onLeave: () => {
+            TestiomialSwiper.autoplay.pause();
+        },
+        onEnterBack: () => {
+            TestiomialSwiper.autoplay.resume();
+        },
+    }
 })
-var swiper = new Swiper(".header-swiper", {
+
+var HeaderSwiper = new Swiper(".header-swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
@@ -79,44 +111,44 @@ var departmentCounter = document.getElementById("department-counter");
 var memberCounter = document.getElementById("member-counter");
 var eventsCounter = document.getElementById("events-counter");
 
-function counter(element,maxNumber,delay){
+function counter(element, maxNumber, delay) {
     var number = 0;
     element.innerText = number;
-    const interval = setInterval(function(){
+    const interval = setInterval(function () {
         element.innerText = number;
-        if(number <maxNumber){
+        if (number < maxNumber) {
             number++;
-        }else{
+        } else {
             clearInterval(interval);
         }
-    },delay)
+    }, delay)
 }
 
 
-gsap.fromTo("#department-counter",{},{
-    scrollTrigger:{
-        trigger:"#department-counter",
-        start:"bottom 95%",
-        onEnter:()=>{
-            counter(departmentCounter,8,100);
+gsap.fromTo("#department-counter", {}, {
+    scrollTrigger: {
+        trigger: "#department-counter",
+        start: "bottom 95%",
+        onEnter: () => {
+            counter(departmentCounter, 8, 50);
         }
     }
 })
-gsap.fromTo("#member-counter",{},{
-    scrollTrigger:{
-        trigger:"#member-counter",
-        start:"bottom 95%",
-        onEnter:()=>{
-            counter(memberCounter,66,15);
+gsap.fromTo("#member-counter", {}, {
+    scrollTrigger: {
+        trigger: "#member-counter",
+        start: "bottom 95%",
+        onEnter: () => {
+            counter(memberCounter, 66, 7);
         }
     }
 })
-gsap.fromTo("#events-counter",{},{
-    scrollTrigger:{
-        trigger:"#events-counter",
-        start:"bottom 95%",
-        onEnter:()=>{
-            counter(eventsCounter,3,250);
+gsap.fromTo("#events-counter", {}, {
+    scrollTrigger: {
+        trigger: "#events-counter",
+        start: "bottom 95%",
+        onEnter: () => {
+            counter(eventsCounter, 3, 125);
         }
     }
 })
