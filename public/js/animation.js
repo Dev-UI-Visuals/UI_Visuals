@@ -28,16 +28,24 @@ var MemberSwiper = new Swiper(".member-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // breakpoints: {
-    //     1000: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 0,
-    //     },
-    //     600: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 0,
-    //     }
-    // }
+    breakpoints: {
+        1000: {
+            slidesPerView: 5,
+            spaceBetween: 0,
+        },
+        800: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        }
+    }
 });
 MemberSwiper.autoplay.stop();
 
