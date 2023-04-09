@@ -151,6 +151,21 @@
   .department-item {
     width: 350px;
   }
+  .leader {
+    width: 90%;
+  }
+  .leaders{
+    width: 160px;
+  }
+  .leaders img {
+    height: 170px;
+  }
+  .links-card{
+    width: 160px;
+  }
+  .leaders:hover .links-card {
+    height: 170px;
+  }
   .more-info-event{
     flex-direction: column;
     width: 95%;
