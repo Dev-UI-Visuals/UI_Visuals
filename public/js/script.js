@@ -16,8 +16,8 @@ var moreEvents = [{
     date: "2023-04-23"
 },
 {
-    img: '/image/Code_Bricks_Event_1.jpg',
-    title: "Vision",
+    img: '/image/events/Vision_Quest.png',
+    title: "Vision Quest",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus, molestias veniam saepe maxime aut dignissimos reprehenderit impedit minima eveniet! Unde vitae earum natus ducimus, ab ipsam officia temporibus culpa nulla voluptas harum aliquam perspiciatis porro fugiat doloribus numquam expedita consectetur saepe ea soluta. Dolore quisquam accusantium non minus, fugit iste aspernatur odit, sequi eveniet esse similique at quam reiciendis suscipit, facere laudantium consequatur vero ipsa? Asperiores odio quisquam magnam.",
     location: "Kuri Village, Kalinchowk",
     date: "2023-04-23"
