@@ -8,18 +8,29 @@
   .single-event {
     width: 300px;
   }
-  .mentor img{
+  .mentor img {
     width: 200px;
     height: 180px;
     object-fit: cover;
   }
+  .member-swiper-wrapper {
+    margin-left: -10px;
+  }
+  .member {
+    height: 15vw;
+  }
+  .member img {
+    width: 13vw;
+    height: 13vw;
+  }
 }
-@media screen and (min-width:800px) {
-  .less{
+
+@media screen and (min-width: 800px) {
+  .less {
     display: none;
   }
-
 }
+
 @media screen and (max-width: 1000px) {
   .nav {
     width: 95%;
@@ -34,14 +45,15 @@
   .about-pick {
     width: 25%;
   }
-  .about h1,.event h1 {
+  .about h1,
+  .event h1 {
     font-size: 70px;
     line-height: 20%;
   }
-  .why-item h3{
+  .why-item h3 {
     font-size: 25px;
   }
-  .team h1{
+  .team h1 {
     font-size: 70px;
   }
   .about p {
@@ -51,7 +63,7 @@
   .counter {
     width: 60%;
   }
-  .counter-iteam h4{
+  .counter-iteam h4 {
     font-size: 20px;
   }
   .counter-iteam h3 {
@@ -63,19 +75,28 @@
   .single-event {
     width: 350px;
   }
-  .more-info-event{
+  .more-info-event {
     width: 85%;
   }
-  .why h2,.departments h2 {
+  .why h2,
+  .departments h2 {
     font-size: 50px;
   }
-  .departments-container{
+  .departments-container {
     width: 85%;
   }
-  .mentor img{
-    width: 180px;
-    height: 170px;
-    object-fit: cover;
+  .member-swiper-wrapper {
+    margin-left: -20px;
+  }
+  .member {
+    height: 18vw;
+  }
+  .member img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .member h5 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -85,27 +106,30 @@
   .home-logo {
     width: 350px;
   }
-  .about ,.team,.event{
+  .about,
+  .team,
+  .event {
     width: 90%;
     padding: 50px 5%;
   }
-  .about h1,.event h1  {
+  .about h1,
+  .event h1 {
     font-size: 60px;
     line-height: 10%;
   }
-  .why-item h3{
+  .why-item h3 {
     font-size: 22px;
   }
-  .why-item img{
+  .why-item img {
     width: 35px;
   }
-  .team h1{
+  .team h1 {
     font-size: 60px;
   }
-  .more{
+  .more {
     display: none;
   }
-  .less{
+  .less {
     display: block;
   }
   .about-pick {
@@ -119,7 +143,7 @@
   .counter {
     width: 70%;
   }
-  .counter-iteam h4{
+  .counter-iteam h4 {
     font-size: 18px;
   }
   .counter-iteam h3 {
@@ -131,16 +155,17 @@
   .why-item {
     width: 400px;
   }
-  .why h2 ,.departments h2 {
+  .why h2,
+  .departments h2 {
     font-size: 45px;
   }
-  .departments-container{
+  .departments-container {
     width: 90%;
   }
-  .department-item img{
+  .department-item img {
     width: 35px;
   }
-  .teacher{
+  .teacher {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
@@ -148,42 +173,56 @@
   .department-item {
     width: 350px;
   }
-  .leader,.heads {
+  .leader,
+  .heads {
     width: 90%;
   }
-  .leaders,.department-team {
+  .leaders,
+  .department-team {
     width: 160px;
   }
-  .leaders img ,.department-team  img{
+  .leaders img,
+  .department-team img {
     height: 170px;
   }
-  .links-card,.department-links-card{
+  .links-card,
+  .department-links-card {
     width: 160px;
   }
-  .leaders:hover .links-card,.department-team:hover .department-links-card {
+  .leaders:hover .links-card,
+  .department-team:hover .department-links-card {
     height: 170px;
   }
-
-  .more-info-event{
+  .member {
+    height: 23vw;
+  }
+  .member img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .member h5 {
+    font-size: 15px;
+  }
+  .more-info-event {
     flex-direction: column;
     width: 95%;
     gap: 5px;
     height: 500px;
   }
-  .more-info-event img{
+  .more-info-event img {
     width: 100%;
     height: 40%;
   }
-  .event-header{
+  .event-header {
     justify-content: space-between;
   }
   .event-header h2 {
     font-size: 22px;
   }
-  .event-header p{
+  .event-header p {
     font-size: 14px;
   }
-  .event-header{
+  .event-header {
     width: 100%;
     height: 60%;
     gap: 0px;
@@ -194,14 +233,14 @@
   .testonomial h2 {
     font-size: 45px;
   }
-  .single-testimonial{
+  .single-testimonial {
     width: 80%;
   }
-  .single-testimonial img{
+  .single-testimonial img {
     width: 130px;
     height: 130px;
   }
-  .testonomial h3{
+  .testonomial h3 {
     font-size: 23px;
   }
 }
@@ -217,25 +256,28 @@
   .home-logo {
     width: 300px;
   }
-  .about,.event{
+  .about,
+  .event {
     width: 90%;
     padding: 20px 5%;
   }
-  .team h1{
+  .team h1 {
     font-size: 50px;
   }
-  .about h1,.team h1, .event h1  {
+  .about h1,
+  .team h1,
+  .event h1 {
     font-size: 50px;
     line-height: 0%;
   }
   .about p {
     width: 100%;
     font-size: 16px;
-  } 
+  }
   .counter {
     width: 80%;
   }
-  .counter-iteam h4{
+  .counter-iteam h4 {
     font-size: 17px;
   }
   .counter-iteam h3 {
@@ -244,54 +286,70 @@
   .why-item {
     width: 350px;
   }
-  .why-item img{
+  .why-item img {
     width: 35px;
   }
-  .why-item p{
+  .why-item p {
     font-size: 16px;
   }
-  .why h2 ,.departments h2 {
+  .why h2,
+  .departments h2 {
     font-size: 40px;
   }
-  .departments-container{
+  .departments-container {
     width: 95%;
   }
-  .leader,.heads {
+  .leader,
+  .heads {
     width: 80%;
   }
-  .leaders, .department-team {
+  .leaders,
+  .department-team {
     width: 150px;
   }
-  .leaders img,.department-team  img {
+  .leaders img,
+  .department-team img {
     height: 150px;
   }
-  .links-card{
+  .links-card {
     width: 150px;
   }
   .department-links-card {
     width: 150px;
   }
-  .leaders:hover .links-card,.department-team:hover .department-links-card {
+
+  .leaders:hover .links-card,
+  .department-team:hover .department-links-card {
     height: 150px;
   }
   .testonomial h2 {
     font-size: 40px;
   }
-  .single-testimonial img{
+  .single-testimonial img {
     width: 120px;
     height: 120px;
   }
   .testimonial-swiper .swiper-wrapper {
     margin-left: calc(5%);
   }
-  .single-testimonial{
+  .single-testimonial {
     width: 90%;
   }
-  .testonomial h3{
+  .testonomial h3 {
     font-size: 22px;
   }
-  .single-testimonial h4{
+  .single-testimonial h4 {
     font-size: 17px;
+  }
+  .member {
+    height: 32vw;
+  }
+  .member img {
+    width: 28vw;
+    height: 28vw;
+  }
+  .member h5 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -311,11 +369,14 @@
   .ui {
     width: 40px;
   }
-  .about, .team, .event{
+  .about,
+  .team,
+  .event {
     width: 90%;
     padding: 20px 5%;
   }
-  .about h1, .event h1  {
+  .about h1,
+  .event h1 {
     font-size: 50px;
     line-height: 0%;
   }
@@ -326,50 +387,71 @@
   .counter {
     width: 90%;
   }
-  .counter-iteam h4{
+  .counter-iteam h4 {
     font-size: 16px;
   }
   .counter-iteam h3 {
     font-size: 35px;
   }
-  .why-item p{
+  .why-item p {
     font-size: 15px;
   }
-  .why h2,.team h1,.departments h2 {
+  .why h2,
+  .team h1,
+  .departments h2 {
     font-size: 40px;
   }
-  .single-event{
+  .single-event {
     height: 530px;
   }
   .single-event-content {
     height: calc(500px - 230px);
   }
-  .more-info-event{
+  .more-info-event {
     height: 600px;
   }
-  .leader,.heads {
+  .leader,
+  .heads {
     width: 90%;
   }
-  .leaders ,.department-team {
+  .leaders,
+  .department-team {
     width: 120px;
   }
-  .leaders img,.department-team  img {
+  .leaders img,
+  .department-team img {
     height: 120px;
   }
-  .leaders h5,.department-team h5 {
+  .leaders h5,
+  .department-team h5 {
     font-size: 13px;
   }
-  .leaders h4,.department-team  h4{
+  .leaders h4,
+  .department-team h4 {
     font-size: 13px;
   }
-  .links-card{
+  .links-card {
     width: 120px;
   }
-  .department-links-card{
+  .department-links-card {
     width: 120px;
   }
-  .leaders:hover .links-card ,.department-team:hover .department-links-card{
+  .leaders:hover .links-card,
+  .department-team:hover .department-links-card {
     height: 120px;
+  }
+  .member-swiper-wrapper{
+    margin-left: -40px;
+  }
+  .member {
+    height: 35vw;
+  }
+  .member img {
+    width: 28vw;
+    height: 28vw;
+  }
+  .member h5 {
+    font-size: 12px;
   }
   .testonomial h2 {
     font-size: 35px;
@@ -377,13 +459,14 @@
   .testimonial-swiper .swiper-wrapper {
     margin-left: calc(2%);
   }
-  .single-testimonial{
+  .single-testimonial {
     width: 95%;
   }
-  .testonomial h3{
+  .testonomial h3 {
     font-size: 20px;
   }
-  .single-testimonial h4{
+  .single-testimonial h4 {
     font-size: 16px;
   }
+
 }

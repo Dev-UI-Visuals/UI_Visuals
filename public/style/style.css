@@ -349,7 +349,9 @@
 .department-team:hover i {
   font-size: 25px;
 }
-
+.member-swiper-wrapper{
+  margin-left: -1px;
+}
 .member {
   width: 200px;
   height: 210px;
@@ -365,30 +367,7 @@
   font-size: 16px;
   color: var(--text-main);
 }
-.member-links-card {
-  gap: 10px;
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 180px;
-  height: 0px;
-  background-color: rgb(56, 54, 54, 0.5);
-  transition: 0.5s;
-  cursor: pointer;
-}
-.member-links-card i {
-  color: white;
-  font-size: 0px;
-  transition: 0.5s;
-}
-.member:hover .member-links-card {
-  height: 175px;
-}
-.member:hover i {
-  font-size: 25px;
-}
+
 /* WHY 8 */
 .why {
   background: linear-gradient(var(--primary-mid), var(--primary-main));

@@ -38,10 +38,14 @@ var MemberSwiper = new Swiper(".member-swiper", {
             spaceBetween: 0,
         },
         600: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 0,
         },
         400: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        200: {
             slidesPerView: 2,
             spaceBetween: 0,
         }
