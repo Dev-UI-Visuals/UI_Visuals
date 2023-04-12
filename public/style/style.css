@@ -292,6 +292,7 @@
   transition: 0.5s;
   cursor: pointer;
 }
+/* OK */
 .leaders h5 {
   color: var(--text-main);
   font-size: 16px;
