@@ -23,6 +23,24 @@ var moreEvents = [{
     date: "2023-04-23"
 }];
 
+function setButton (isMore){
+    var ButtonDiv = document.getElementById("button");
+    if(isMore){
+        ButtonDiv.innerHTML = `<button class="event-view-button" onclick="seeMoreEvents(${isMore})">See More Events</button>`;
+    }else{
+        ButtonDiv.innerHTML = `<button class="event-view-button" onclick="seeMoreEvents(${isMore})">See Less Events</button>`;
+    }
+}
+setButton(true);
+
+function seeMoreEvents(isMore){
+   if(isMore){
+    alert("MORE")
+   }else{
+    alert("LESS")
+   }
+   setButton(false)
+}
 
 function seeMoreEvent(num) {
     var elemet = document.getElementById("more-info-event");

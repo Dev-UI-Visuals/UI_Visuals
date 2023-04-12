@@ -415,6 +415,19 @@
   gap: 30px;
   padding: 50px 0px;
 }
+.event-view-button{
+  border: none;
+  border-radius: 0px;
+  padding: 10px 30px;
+  background-color: var(--text-light);
+  cursor: pointer;
+  transition: .5s;
+  color: var(--primary-light);
+  font-size: 14px;
+}
+.event-view-button:hover{
+  background-color: var(--text-main);
+}
 .event h1 {
   font-size: 90px;
   color: var(--secondary-main);
