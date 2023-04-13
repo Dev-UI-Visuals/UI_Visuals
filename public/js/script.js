@@ -34,19 +34,64 @@ function setButton (isMore){
 setButton(true);
 
 function seeMoreEvents(isMore){
+    var EventsElement = document.getElementById("events");
    if(isMore){
-    alert("MORE")
+    moreEvents.forEach((curr,indx) => {
+        EventsElement.innerHTML += `<div class="single-event flex-col">
+        <div class="event-title">
+          <h3>${curr.title}</h3>
+        </div>
+        <img src="${curr.img}" />
+        <div class="single-event-content flex-col">
+          <div class="flex-row events-icons">
+            <i class="uil uil-location-point"></i>
+            <h5 style="font-size: 14px">${curr.location}</h5>
+          </div>
+          <div class="flex-row events-icons">
+            <i class="uil uil-calendar-alt"></i>
+            <h5 style="font-size: 14px">${curr.date}</h5>
+          </div>
+          <h5>
+            ${curr.description.substr(0,201)}
+          </h5>
+          <button onclick="seeMoreEvent(${indx})">See More</button>
+        </div>
+      </div>`
+    })
+    setButton(false)
+    gsap.to(window,
+        {
+            duration: .4,
+            scrollTo: {
+                y: "#events",
+                offsetY: 0
+            }
+        }
+    )
    }else{
-    alert("LESS")
+    moreEvents.forEach((curr,indx) => {
+        EventsElement.innerHTML = "";
+        gsap.to(window,
+            {
+                duration: .4,
+                scrollTo: {
+                    y: "#event",
+                    offsetY: 0
+                }
+            }
+        )
+        setButton(true)
+    })
    }
-   setButton(false)
+
 }
 
 function seeMoreEvent(num) {
     var elemet = document.getElementById("more-info-event");
    elemet.style.opacity = 1;
    elemet.style.display = "flex";
-    var html = `<img src="${moreEvents[num - 1].img}"/>
+   
+    var html = `<img src="${moreEvents[num - 1].img}" id="event-image-${num}"/>
     <div class="flex-col event-header">
         <h2>${moreEvents[num - 1].title}</h2>
         <div class="flex-row " style="align-items:center;gap:5px">
@@ -60,7 +105,7 @@ function seeMoreEvent(num) {
       <p>
       ${moreEvents[num - 1].description} 
       </P>
-      <button onclick="seeLess()">See Less</button>
+      <button onclick="seeLess(${num})">See Less</button>
     </div>`
     setTimeout(function () {
         elemet.innerHTML = html
@@ -75,7 +120,7 @@ function seeMoreEvent(num) {
         }
     )
 }
-function seeLess() {
+function seeLess(num) {
     var elemet = document.getElementById("more-info-event");
     elemet.innerHTML = "";
     setTimeout(function () {
@@ -86,7 +131,7 @@ function seeLess() {
         {
             duration: .4,
             scrollTo: {
-                y: "#event",
+                y: `#event-image-${num}`,
                 offsetY: 0
             }
         }
