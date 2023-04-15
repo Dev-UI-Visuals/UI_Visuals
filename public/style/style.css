@@ -213,6 +213,30 @@
   margin: 0px auto;
   justify-content: space-between;
 }
+.links-teacher{
+  width: 220px;
+  height: 0px;
+  position: absolute;
+  background-color: rgb(56, 54, 54, 0.5);
+  z-index: 2;
+  gap: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+.links-teacher i {
+  color: white;
+  font-size:0px;
+  transition: .5s;
+}
+.mentor:hover .links-teacher {
+  height: 200px;
+}
+.mentor:hover .links-teacher i{
+  font-size: 30px;
+}
 .mentor {
   align-items: center;
   gap: 5px;

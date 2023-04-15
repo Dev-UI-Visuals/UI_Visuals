@@ -13,6 +13,12 @@
     height: 180px;
     object-fit: cover;
   }
+  .links-teacher{
+    width: 200px;
+  }
+  .mentor:hover  .links-teacher{
+    height: 180px;
+  }
   .member-swiper-wrapper {
     margin-left: -10px;
   }
