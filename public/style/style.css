@@ -658,6 +658,10 @@
 .contact a {
   z-index: 1;
 }
+.contact i {
+  color: var(--primary-main);
+  font-size: 30px;
+}
 .contact h5 {
   font-size: 16px;
   color: var(--primary-light);
