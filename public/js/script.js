@@ -105,7 +105,7 @@ function seeMoreEvent(num) {
       <p>
       ${moreEvents[num - 1].description} 
       </P>
-      <button onclick="seeLess(${num})">See Less</button>
+      <button onclick="seeLess()">See Less</button>
     </div>`
     setTimeout(function () {
         elemet.innerHTML = html
@@ -120,7 +120,7 @@ function seeMoreEvent(num) {
         }
     )
 }
-function seeLess(num) {
+function seeLess() {
     var elemet = document.getElementById("more-info-event");
     elemet.innerHTML = "";
     setTimeout(function () {
@@ -131,7 +131,7 @@ function seeLess(num) {
         {
             duration: .4,
             scrollTo: {
-                y: `#event-image-${num}`,
+                y: `#more-info-event`,
                 offsetY: 0
             }
         }
