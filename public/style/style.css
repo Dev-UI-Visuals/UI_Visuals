@@ -113,6 +113,10 @@
   text-align: center;
   line-height: 30%;
 }
+.about-image{
+  width: 350px;
+  object-fit: cover;
+}
 .about p {
   width: 80%;
   text-align: center;
