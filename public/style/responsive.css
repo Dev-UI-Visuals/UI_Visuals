@@ -213,7 +213,7 @@
     flex-direction: column;
     width: 95%;
     gap: 5px;
-    height: 500px;
+    height: 100%;
   }
   .more-info-event img {
     width: 100%;
@@ -414,7 +414,7 @@
     height: calc(500px - 230px);
   }
   .more-info-event {
-    height: 600px;
+    height: 100%;
   }
   .leader,
   .heads {
