@@ -104,6 +104,21 @@
   .member h5 {
     font-size: 15px;
   }
+  .contact-box{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact-info{
+    width: 80%;
+    align-items: center;
+  }
+  .contact-info h5{
+    text-align: center;
+  }
+  .footer-line{
+    width: 130%;
+  }
 }
 @media screen and (max-width: 800px) {
   .nav-items {
@@ -249,8 +264,11 @@
   .testonomial h3 {
     font-size: 23px;
   }
+  .footer-line{
+    width: 150%;
+  }
 }
-/* ok */
+
 @media screen and (max-width: 600px) {
   .nav {
     flex-direction: column;
@@ -360,6 +378,9 @@
   .member h5 {
     font-size: 15px;
   }
+  .footer-line{
+    width: 170%;
+  }
 }
 @media screen and (max-width: 400px) {
   .nav {
@@ -414,7 +435,7 @@
     font-size: 40px !important;
   }
   .single-event {
-    height: 530px;
+    height: 100%;
   }
   .single-event-content {
     height: calc(500px - 230px);
@@ -479,6 +500,15 @@
   }
   .single-testimonial h4 {
     font-size: 16px;
+  }
+  .contact-links h5{
+    font-size: 13px;
+  }
+  .contact-links i {
+    font-size: 25px;
+  }
+  .footer-line{
+    width: 200%;
   }
 
 }

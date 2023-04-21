@@ -442,6 +442,7 @@
   align-items: center;
   gap: 30px;
   padding: 50px 0px;
+  height: 100%;
 }
 .event-view-button {
   border: none;
@@ -465,7 +466,7 @@
 .event h2 {
   text-align: center;
   font-size: 40px;
-  line-height: 75%;
+  line-height: 100%;
   background-image: linear-gradient(var(--text-main), var(--text-light));
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -484,7 +485,7 @@
 .single-event {
   margin-top: 25px;
   width: 330px;
-  height: 480px;
+  height: 100%;
   background-color: #e2e2e2;
   justify-content: space-between;
 }
@@ -561,6 +562,11 @@
   height: 100%;
   object-fit: cover;
 }
+.more-info-event h4, .more-info-event i{
+  color: var(--text-main);
+}
+
+
 .event-header h2 {
   font-size: 30px;
   color: var(--text-main);
@@ -673,10 +679,6 @@
 .contact-info{
   width: 30%;
 }
-.contact-info h5{
-  text-align: left !important;
-  font-size: 15px !important;
-}
 .contact-links h3,.contact-info h3{
   font-size: 18px;
   color: var(--primary-main);
@@ -704,13 +706,17 @@
   font-weight: 400;
   color: var(--primary-light);
 }
+.contact-info h5{
+  text-align: left;
+  font-size: 15px ;
+}
 .footer-line {
   width: 100%;
   position: absolute;
   bottom: -20px;
   object-fit: contain;
   z-index: 0;
-  opacity: .5;
+  opacity: .7;
 
 }
 

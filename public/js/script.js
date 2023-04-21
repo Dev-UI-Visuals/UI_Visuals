@@ -82,7 +82,7 @@ function seeMoreEvents(isMore) {
                 <h5 style="font-size: 14px">${curr.date}</h5>
               </div>
               <h5>
-                ${curr.description.substr(0, 201) + "..."}
+                ${curr.description.substr(0, 180) + "..."}
               </h5>
               <button onclick="readMore(${indx})">Read More</button>
             </div>
@@ -137,7 +137,7 @@ function readMore(num) {
       <p>
       ${moreEvents[num].description} 
       </P>
-      <button onclick="seeLess()">See Less</button>
+      <button onclick="readLess()">Read Less</button>
     </div>`
     setTimeout(function () {
         elemet.innerHTML = html
@@ -152,7 +152,7 @@ function readMore(num) {
         }
     )
 }
-function seeLess() {
+function readLess() {
     var elemet = document.getElementById("more-info-event");
     elemet.innerHTML = "";
     setTimeout(function () {
