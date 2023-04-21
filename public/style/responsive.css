@@ -267,6 +267,9 @@
     width: 90%;
     padding: 20px 5%;
   }
+  .about-image{
+    width: 300px;
+  }
   .team h1 {
     font-size: 50px;
   }
@@ -381,6 +384,9 @@
     width: 90%;
     padding: 20px 5%;
   }
+  .about-image{
+    width: 250px;
+  }
   .about h1,
   .event h1,.contact h1 {
     font-size: 50px;
@@ -405,7 +411,7 @@
   .why h2,
   .team h1,
   .departments h2 {
-    font-size: 40px;
+    font-size: 40px !important;
   }
   .single-event {
     height: 530px;
