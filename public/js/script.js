@@ -11,7 +11,7 @@ var moreEvents = [
         bgImg:"/image/events/Code_Brisk_1.png",
     },
     {
-        img: '/image/Code_Bricks_Event_1.jpg',
+        img: '/image/events/UPC_Design_Hunt.png',
         title: "UPC Design Hunt ",
         description: "UI Visuals organized an exciting event called Design Hunt, aimed at providing a platform for students to showcase their creativity and design skills. The event focused on designing a mobile app with unique features for new UPC early birds. The event was executed successfully, thanks to the efforts and support of our members. The event aimed to challenge participants' creativity and problem-solving skills while promoting collaboration and teamwork. Participants were given the resources to design a mobile app with unique features for new UPC early birds, showcasing their skills and potential in the UI and Visual Design field. The event encouraged participants to explore their creativity and learn from their peers and community leaders.",
         location: "Herald College, Naxal",
@@ -27,14 +27,15 @@ var moreEvents = [
         bgImg:"/image/events/Vision_Quest_1.png"
     },
     {
-        img: '/image/Code_Bricks_Event_1.jpg',
-        title: "UPC Design Hunt ",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus, molestias veniam saepe maxime aut dignissimos reprehenderit impedit minima eveniet! Unde vitae earum natus ducimus, ab ipsam officia temporibus culpa nulla voluptas harum aliquam perspiciatis porro fugiat doloribus numquam expedita consectetur saepe ea soluta. Dolore quisquam accusantium non minus, fugit iste aspernatur odit, sequi eveniet esse similique at quam reiciendis suscipit, facere laudantium consequatur vero ipsa? Asperiores odio quisquam magnam.",
-        location: "Kuri Village, Kalinchowk",
-        date: "2023-04-23"
+        img: '/image/events/Photoshop_Session.png',
+        title: "Photoshop Session ",
+        description: "UI Visuals successfully organized a session on Photoshop Session for beginners. The event provided an opportunity for participants to learn how to use Photoshop tools to edit and manipulate images, as well as design minimalistic posters. The session was beneficial for students who are starting their journey in design and editing, as well as those who want to become familiar with other Adobe software in the future. Participants were able to book their seats by filling out a form and joining the event. UI Visuals hopes that the knowledge and skills gained from this event will be useful for participants in their future design endeavors.",
+        location: "Herald College, Naxal",
+        date: "2022-04-12",
+        bgImg:"/image/events/Photoshop_Session_1.png"
     },
     {
-        img: '/image/Events/Photography_Session.png',
+        img: '/image/events/Photography_Session.png',
         title: "Photography Session",
         bgImg:"/image/Events/Photography_Session_1.png",
         description: "UI Visuals organized a photography session as a part of the Visual Mela event in the Herald Devfest 2021. The session featured guest speakers Mr. Oscar Shrestha, a professional photographer and Islington graduate, and Mr. Pratik Pradhan and Mr. Rakshak Bhusan Bajracharya as guest lecturers. The session was held at Kumari Hall, Kamalpokhari. Participants had the opportunity to learn about photography concepts, creativity, dos and don'ts while clicking photos, and real-life experiences from the guest speakers.Additionally, the guest tutors provided professional ideas on how to click better photos and also provided feedback on the photographs submitted by the participants on that very day. Overall, the session was a great opportunity for photography enthusiasts to learn from industry professionals and improve their photography skill.",
