@@ -5,7 +5,7 @@ Before we begin, let's ensure that you have Node.js installed on your machine, a
 ### To Add or To Fix
   1- Propper aligment of buttons on event card and reversing color of event card.<br/>
 ✔ 2- Shifting Events section to section below about us.<br/>
-  3- Fixing gap on footer texts and links.<br/>
+✔  3- Fixing gap on footer texts and links.<br/>
   4- Adding valid icons on Why UI Visuals section.<br/>
 ✔  5- Changing position of abstract on About Section.<br/>
 ✔ 6- Shifing offset of color nav bar.<br/>
