@@ -1,24 +1,30 @@
-<div class="flex-col bg" id="bg">
+<!-- Div bg  is wrapper div for navbar of class nav and home div-->
+<div class="flex-col bg" id="bg">bar
+  <!-- div for nav bar -->
   <div class="nav flex-row" id="nav">
+      <!-- Div nav-img contain headding nav images  -->
     <div class="nav-img flex-row">
       <img src="/image/DEV_BLACK.png" class="dev" />
       <div class="nav-line"></div>
       <img src="/image/UI_BLACK.png" class="ui" />
     </div>
+    <!-- Div nav-items contain links for scroll navigation -->
     <div class="nav-items flex-row">
       <h4 onclick="scrollDown('#home')">Home</h4>
       <h4 onclick="scrollDown('#about')">About</h4>
-      <h4 onclick="scrollDown('#team')">Team</h4>
       <h4 onclick="scrollDown('#event')">Events</h4>
+      <h4 onclick="scrollDown('#team')">Team</h4>
       <h4 onclick="scrollDown('#contact')">Contact</h4>
     </div>
   </div>
+    <!-- div for home section -->
   <div id="home" class="home flex-col">
     <img src="/image/UI_BLACK.png" class="home-logo" />
     <h3>"Leading Through Design"</h3>
     <button onclick="scrollDown('#contact')">Contact Us</button>
   </div>
 </div>
+<!-- Div header-swipeer contain heading auto slider  -->
 <div class="swiper header-swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">

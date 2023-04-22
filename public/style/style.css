@@ -202,7 +202,7 @@
 .team {
   padding: 70px 0px;
   width: 100%;
-  background: linear-gradient(var(--primary-mid), var(--primary-main));
+  background: linear-gradient(var(--primary-main),var(--primary-mid));
   align-items: center;
   gap: 50px;
 }
@@ -443,7 +443,7 @@
 }
 /* Event */
 .event {
-  background: linear-gradient(var(--primary-main), var(--primary-mid));
+  background: linear-gradient(var(--primary-mid),var(--primary-main));
   align-items: center;
   gap: 30px;
   padding: 50px 0px;

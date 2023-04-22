@@ -2,9 +2,9 @@
 
 Before we begin, let's ensure that you have Node.js installed on your machine, as the project's server is built on JavaScript. Once Node.js is installed, simply run the command "node index.js" in your terminal. Then, open this URL "http://localhost:5000/" to view your project. This will allow you to see the project in action and get started with development.
 
-## To Add or To Fix
+### To Add or To Fix
   1- Propper aligment of buttons on event card and reversing color of event card.<br/>
-  2- Shifting Events section to section below about us.<br/>
+✔  2- Shifting Events section to section below about us.<br/>
   3- Fixing gap on footer texts and links.<br/>
   4- Adding valid icons on Why UI Visuals section.<br/>
 ✔  5- Changing position of abstract on About Section.<br/>
