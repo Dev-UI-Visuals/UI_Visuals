@@ -218,12 +218,12 @@
 }
 .teacher {
   align-items: center;
-  width: 65%;
+  width: 50%;
   margin: 0px auto;
   justify-content: space-between;
 }
 .links-teacher {
-  width: 220px;
+  width: 200px;
   height: 0px;
   position: absolute;
   background-color: rgb(56, 54, 54, 0.5);
@@ -241,7 +241,7 @@
   transition: 0.5s;
 }
 .mentor:hover .links-teacher {
-  height: 200px;
+  height: 180px;
 }
 .mentor:hover .links-teacher i {
   font-size: 30px;
@@ -251,8 +251,8 @@
   gap: 5px;
 }
 .mentor img {
-  width: 220px;
-  height: 200px;
+  width: 200px;
+  height: 180px;
   object-fit: cover;
 }
 .team h2 {

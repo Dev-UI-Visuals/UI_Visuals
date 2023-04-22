@@ -9,7 +9,7 @@ Before we begin, let's ensure that you have Node.js installed on your machine, a
   4- Adding valid icons on Why UI Visuals section.<br/>
 ✔  5- Changing position of abstract on About Section.<br/>
 ✔ 6- Shifing offset of color nav bar.<br/>
-   7- Fixing mentor images.<br/>
+✔   7- Fixing mentor images.<br/>
 ✔   8- Increasing padding of nav bar.<br/>
 ✔   9- Decreasing image size of nav bar logo.<br/>
    10- Adding firebase connection (not sure though).<br/>
