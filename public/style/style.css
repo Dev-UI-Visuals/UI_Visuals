@@ -16,9 +16,14 @@
   top: 0px;
   z-index: 4;
   background-color: transparent;
+  transition: .5s;
 }
 .white-nav {
   background-color: var(--primary-mid);
+}
+.half-nav {
+  background-color: #ededed63;
+
 }
 .nav-img {
   gap: 20px;

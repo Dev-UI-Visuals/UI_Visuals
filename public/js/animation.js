@@ -113,11 +113,18 @@ var HeaderSwiper = new Swiper(".header-swiper", {
 var navElements = document.getElementById("#nav");
 window.addEventListener('scroll', function () {
     const offset = window.pageYOffset;
-
-    if (offset > 50)
-        nav.classList.add('white-nav')
-    else
+    if (offset > 100 && offset < 600) {
+        nav.classList.add('half-nav')
         nav.classList.remove('white-nav')
+    }
+    else if (offset >= 600) {
+        nav.classList.add('white-nav')
+        nav.classList.remove('half-nav')
+    }
+    else {
+        nav.classList.remove('white-nav')
+        nav.classList.remove('half-nav')
+    }
 });
 var departmentCounter = document.getElementById("department-counter");
 var memberCounter = document.getElementById("member-counter");
