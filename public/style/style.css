@@ -155,8 +155,8 @@
 }
 .black-circle-dots {
   position: absolute;
-  right: 5%;
-  top: 200%;
+  right: 0%;
+  top: 160%;
   object-fit: contain;
 }
 /* Department */
@@ -406,7 +406,7 @@
 .why {
   background: linear-gradient(var(--primary-mid), var(--primary-main));
   width: 80%;
-  padding: 50px 10%;
+  padding: 0px 10% 50px 10%;
   gap: 30px;
 }
 .why h2 {
