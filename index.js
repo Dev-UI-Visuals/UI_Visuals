@@ -11,6 +11,9 @@ app.use(express.static(__dirname + '/public'));
 app.get("/", function (req, res) {
     res.render("index");
 });
+app.get("/event", function (req, res) {
+    res.render("index");
+});
 app.get("/*", function (req, res) {
     res.render("error");
 });

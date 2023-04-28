@@ -167,7 +167,7 @@ gsap.fromTo("#events-counter", {}, {
         trigger: "#events-counter",
         start: "bottom 95%",
         onEnter: () => {
-            counter(eventsCounter, 3, 125);
+            counter(eventsCounter, 12, 40);
         }
     }
 })
