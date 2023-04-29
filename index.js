@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 app.get("/event", function (req, res) {
-    res.render("index");
+    res.render("SingleEvent");
 });
 app.get("/*", function (req, res) {
     res.render("error");
