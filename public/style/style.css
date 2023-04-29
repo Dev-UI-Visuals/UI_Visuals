@@ -5,6 +5,7 @@
   --secondary-main: #74c042;
   --secondary-light: #73cb43;
   --text-main: #3a3a3c;
+  --text-mid: #585858;
   --text-light: #6b7070;
 }
 .nav {
@@ -721,7 +722,20 @@
   object-fit: contain;
   z-index: 0;
   opacity: .7;
-
+}
+.event-page{
+  align-items: center;
+  width: 90%;
+  padding: 20px 5%;
+}
+.event-page h2{
+  font-size: 40px;
+  color: var(--text-mid);
+}
+.profile-image{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 
