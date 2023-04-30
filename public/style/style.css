@@ -17,14 +17,13 @@
   top: 0px;
   z-index: 4;
   background-color: transparent;
-  transition: .5s;
+  transition: 0.5s;
 }
 .white-nav {
   background-color: var(--primary-mid);
 }
 .half-nav {
   background-color: #ededed63;
-
 }
 .nav-img {
   gap: 20px;
@@ -119,7 +118,7 @@
   text-align: center;
   line-height: 30%;
 }
-.about-image{
+.about-image {
   width: 350px;
   object-fit: cover;
 }
@@ -203,7 +202,7 @@
 .team {
   padding: 70px 0px;
   width: 100%;
-  background: linear-gradient(var(--primary-main),var(--primary-mid));
+  background: linear-gradient(var(--primary-main), var(--primary-mid));
   align-items: center;
   gap: 50px;
 }
@@ -445,7 +444,7 @@
 }
 /* Event */
 .event {
-  background: linear-gradient(var(--primary-mid),var(--primary-main));
+  background: linear-gradient(var(--primary-mid), var(--primary-main));
   align-items: center;
   gap: 30px;
   padding: 50px 0px;
@@ -569,7 +568,8 @@
   height: 100%;
   object-fit: cover;
 }
-.more-info-event h4, .more-info-event i{
+.more-info-event h4,
+.more-info-event i {
   color: var(--text-main);
 }
 .event-header h2 {
@@ -677,14 +677,15 @@
   justify-content: space-between;
   width: 90%;
 }
-.contact-links{
+.contact-links {
   display: flex;
   flex-direction: column;
 }
-.contact-info{
+.contact-info {
   width: 30%;
 }
-.contact-links h3,.contact-info h3{
+.contact-links h3,
+.contact-info h3 {
   font-size: 18px;
   color: var(--primary-main);
 }
@@ -711,9 +712,9 @@
   font-weight: 400;
   color: var(--primary-light);
 }
-.contact-info h5{
+.contact-info h5 {
   text-align: left;
-  font-size: 15px ;
+  font-size: 15px;
 }
 .footer-line {
   width: 100%;
@@ -721,21 +722,49 @@
   bottom: -20px;
   object-fit: contain;
   z-index: 0;
-  opacity: .7;
+  opacity: 0.7;
 }
-.event-page{
+.event-page {
   align-items: center;
-  width: 90%;
-  padding: 20px 5%;
+  width: 70%;
+  padding: 20px 15%;
+  background: linear-gradient(var(--primary-mid), var(--primary-main));
 }
-.event-page h2{
+.event-page h2 {
   font-size: 40px;
   color: var(--text-mid);
 }
-.profile-image{
+.event-page p {
+  width: 100%;
+  color: var(--text-light);
+}
+.event-page iframe {
+  width: 100%;
+  height: 400px;
+}
+.event-content {
+  gap: 30px;
+  align-items: center;
+}
+.profile-image {
   width: 100%;
   height: 350px;
   object-fit: cover;
 }
-
-
+.header-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.event-image-gallery{
+  width: 100% ;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.event-image-gallery img{
+  width: 450px;
+  object-fit: cover;
+  height: 300px;
+}
