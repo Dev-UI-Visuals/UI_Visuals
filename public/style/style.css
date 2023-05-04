@@ -730,6 +730,11 @@
   padding: 20px 15%;
   background: linear-gradient(var(--primary-mid), var(--primary-main));
 }
+.fixed{
+  background-color: var(--primary-mid) !important;
+  position: sticky ;
+  top: 0px;
+}
 .event-page h2 {
   font-size: 40px;
   color: var(--text-mid);
