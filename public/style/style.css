@@ -57,7 +57,7 @@
 }
 .header-image {
   width: 100%;
-  height: 100vh;
+  height: 100vh ;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -752,7 +752,7 @@
   height: 350px;
   object-fit: cover;
 }
-.header-image {
+.header-event-image {
   width: 100%;
   height: 350px;
   object-fit: cover;
