@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <%- include('./components/Header') %>
+    <title>UI Visuals || <%= data.title %></title>
   </head>
   <body>
     <div class="nav fixed flex-row">
@@ -23,54 +24,36 @@
     <div class="flex-col event-page">
       <h2>OUR EVENT MEMORIES</h2>
       <img
-        src="https://heraldcollege.edu.np/storage/post/HCK-Code-Brisk-post_1676978748.jpg"
+        src=<%= data.headerImage %>
         class="profile-image"
       />
-      <h2>HERALD CODE BRISK HACKATHON</h2>
+      <h2><%= data.title %></h2>
       <div class="flex-col event-page-icons">
         <span
           ><div class="flex-row" style="align-items: center; gap: 5px">
             <i class="uil uil-map-marker"></i>
-            <p>Kuri Village, Kalinchowk</p>
+            <p><%= data.location %></p>
           </div></span
         >
         <span
           ><div class="flex-row" style="align-items: center; gap: 5px">
             <i class="uil uil-calender"></i>
-            <p>2023-04-23</p>
+            <p><%= data.date %></p>
           </div></span
         >
       </div>
       <div class="flex-col event-content">
-        <p>
-          Herald DevCorps UI Visual Community, a student-led community at Herald
-          College Kathmandu, successfully organized the nonstop 24-hour 'Code
-          Brisk Hackathon 2023', at Kuri Village Kalinchowk. Situated at an
-          altitude of 3447m above sea level, Code Brisk marks the hackathon held
-          at the highest altitude. A total of 13 colleges participated in the
-          hackathon, with three outstanding teams chosen to construct their
-          prototypes at Kalinchowk. The primary theme of this competition was to
-          boost the tourism and hospitality sector of Kalinchowk through
-          innovative and practical prototypes created by the top three teams.
-        </p>
-        <p>
-          "Our community's unwavering effort and dedication to this project is
-          commendable and has resulted in an incredible outcome. It is a
-          testament to the passion and talent within our community, and I am
-          proud of every one of you", says Mr. Prakash Shrestha, the CEO of
-          Herald College Kathmandu, expressing his gratitude towards the
-          organizing team.
-        </p>
-        <img
-          src="https://heraldcollege.edu.np/storage/uploads/Herald%20Code%20Brisk_1676978644.jpg"
-          class="header-event-image"
-        />
+        <p><%= data.description[0] %></p>
         <div class="flex-row event-image-gallery">
-          <img src="/image/events/Code_Brisk_1.png" />
-          <img src="/image/events/Code_Brisk_1.png" />
-          <img src="/image/events/Code_Brisk_1.png" />
-          <img src="/image/events/Code_Brisk_1.png" />
+          <% for (var i = 0; i < data.images.length; i++ ) { %>
+            <img src=<%= data.images[i] %>
+            />
+          <% } %>
         </div>
+        <% for (var i = 1; i < data.description.length; i++ ) { %>
+          <p><%= data.description[i] %></p>
+          
+        <% } %>
         <p>
           Herald College Kathmandu congratulates the winning team, Virinchi
           College - Team Everest for their revolutionary project, 'Tidy Town',
