@@ -9,11 +9,12 @@ app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
 
 app.get("/", async function (req, res) {
-    var allData = { leaders: [], members: [],heads:[] };
+    var allData = { leaders: [], members: [],heads:[],testimonials:[] };
     try{
         allData.leaders = JSON.parse( await fs.promises.readFile(("data/Leader.json"),'utf-8'));
         allData.members = JSON.parse( await fs.promises.readFile(("data/Member.json"),'utf-8'));
         allData.heads = JSON.parse( await fs.promises.readFile(("data/Head.json"),'utf-8'));
+        allData.testimonials = JSON.parse( await fs.promises.readFile(("data/Testimonial.json"),'utf-8'));
         res.render("index", { data: allData });
     }catch(e){
         return res.render("error");

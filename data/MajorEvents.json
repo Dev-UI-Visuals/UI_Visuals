@@ -17,24 +17,5 @@
             "/image/events/Code_Brisk_1.png",
             "/image/events/Code_Brisk_1.png"
         ]
-    },
-    {
-        "id":"dev-fest",
-        "title": "Dev Fest",
-        "location": "Naxal, Herald College Kathmandu",
-        "date": "2023-04-23",
-        "headerImage": "/image/events/Photoshop_Session.png",
-        "profileImage": "/image/events/Code_Brisk.png",
-        "description": [
-            "Herald DevCorps UI Visual Community, a student-led community at Herald College Kathmandu, successfully organized the nonstop 24-hour 'Code Brisk Hackathon 2023', at Kuri Village Kalinchowk. Situated at an altitude of 3447m above sea level, Code Brisk marks the hackathon held at the highest altitude. A total of 13 colleges participated in the hackathon, with three outstanding teams chosen to construct their prototypes at Kalinchowk. The primary theme of this competition was to boost the tourism and hospitality sector of Kalinchowk through innovative and practical prototypes created by the top three teams.",
-            "'Our community's unwavering effort and dedication to this project is commendable and has resulted in an incredible outcome. It is a testament to the passion and talent within our community, and I am proud of every one of you', says Mr. Prakash Shrestha, the CEO of Herald College Kathmandu, expressing his gratitude towards the organizing team.Herald College Kathmandu congratulates the winning team, Virinchi College - Team Everest for their revolutionary project, 'Tidy Town', which employs sensors to tackle waste management issues and offers a practical way of waste disposal. We would also like to extend our appreciation to all the participating colleges. Ms. Sujata Thapa, Head of Herald Devcorps, also praised the organizing committee and the top three colleges, “The effort of everyone in our community is reflected in the incredible work accomplished, and I am honored to be a part of it. Additionally, the top 3 teams presented truly impressive and achievable ideas, leaving us amazed.”"
-        ],
-        "youtubeCode": "50aIeMJ5xyQ",
-        "images": [
-            "/image/events/Code_Brisk_1.png",
-            "/image/events/Code_Brisk_1.png",
-            "/image/events/Code_Brisk_1.png",
-            "/image/events/Code_Brisk_1.png"
-        ]
     }
 ]
