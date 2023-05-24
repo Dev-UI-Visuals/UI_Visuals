@@ -1,68 +1,41 @@
 <div class="event flex-col" id="event">
   <h1 id="event-fade">Events</h1>
-  <div class="top-events flex-row" >
+  <div class="flex-col major-event">
+    <img src="<%= data.majorEvents[0].headerImage %>" />
+    <h3><%= data.majorEvents[0].title %></h3>
+    <div class="flex-row events-icons">
+      <i class="uil uil-location-point"></i>
+      <h5 style="font-size: 14px"><%= data.majorEvents[0].location %></h5>
+    </div>
+    <div class="flex-row events-icons">
+      <i class="uil uil-calendar-alt"></i>
+      <h5 style="font-size: 14px"><%= data.majorEvents[0].date %></h5>
+    </div>
+    <h5><%= data.majorEvents[0].description[0].substring(0, 300) %>...</h5>
+    <a href='event/<%= data.majorEvents[0].id %>' target="_blank"><button>Read More</button></a>
+  </div>
+  <div class="top-events flex-row">
+   
+    <% for (var i = 0; i < data.events.length; i++ ) { %>
     <div class="single-event flex-col">
       <div class="event-title">
-        <h3>Code brisk Hackathon</h3>
+        <h3><%= data.events[i].name %></h3>
       </div>
-      <img src="/image/events/Code_Brisk.png" />
+      <img src="<%= data.events[i].profileImage %>" />
       <div class="single-event-content flex-col">
         <div class="flex-row events-icons">
           <i class="uil uil-location-point"></i>
-          <h5 style="font-size: 14px">Kuri Village, Kalinchowk</h5>
+          <h5 style="font-size: 14px"><%= data.events[i].location %></h5>
         </div>
         <div class="flex-row events-icons">
           <i class="uil uil-calendar-alt"></i>
-          <h5 style="font-size: 14px">2023-04-23</h5>
+          <h5 style="font-size: 14px"><%= data.events[i].date %></h5>
         </div>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui animi
-          cum iste dolorum tempora. Expedita officiis amet ex fugiat? Atque eum
-          distinctio ea non ullam ipsam obcaecati in ducimus dignissimos?
-        </h5>
-        <button onclick="readMore(0)">Read More</button>
+        <h5><%= data.events[i].description.substring(0, 220) %>..</h5>
+        <button onclick="readMore(`<%= i %>`)">Read More</button>
       </div>
     </div>
-    <div class="single-event flex-col">
-      <div class="event-title">
-        <h3>UPC Design Hunt</h3>
-      </div>
-      <img src="/image/events/UPC_Design_Hunt.png" />
-      <div class="single-event-content flex-col">
-        <div class="flex-row events-icons">
-          <i class="uil uil-location-point"></i>
-          <h5 style="font-size: 14px">Herald College, Naxal</h5>
-        </div>
-        <div class="flex-row events-icons">
-          <i class="uil uil-calendar-alt"></i>
-          <h5 style="font-size: 14px">2023-02-09</h5>
-        </div>
-        <h5>
-          UI Visuals organized an exciting event called Design Hunt, aimed at providing a platform for students to showcase their creativity and design skills. The event focused on designing a mobile app with unique ...
-        </h5>
-        <button onclick="readMore(1)">Read More</button>
-      </div>
-    </div>
-    <div class="single-event flex-col">
-      <div class="event-title">
-        <h3>Vision Quest</h3>
-      </div>
-      <img src="/image/events/Vision_Quest.png" />
-      <div class="single-event-content flex-col">
-        <div class="flex-row events-icons">
-          <i class="uil uil-location-point"></i>
-          <h5 style="font-size: 14px">Herald College, Naxal</h5>
-        </div>
-        <div class="flex-row events-icons">
-          <i class="uil uil-calendar-alt"></i>
-          <h5 style="font-size: 14px">2022-09-01</h5>
-        </div>
-        <h5>
-          UI Visuals organized a remarkable event to help +2 students interested in the field of IT. The event named Vision Quest: Sneak Peek into the Design World was organized to give aspiring software ...
-        </h5>
-        <button onclick="readMore(2)">Read More</button>
-      </div>
-    </div>
+    <% } %>
   </div>
   <div class="top-events flex-row" id="events"></div>
   <div class="more-info-event flex-row" id="more-info-event"></div>

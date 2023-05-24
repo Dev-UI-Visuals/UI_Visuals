@@ -450,6 +450,22 @@
   padding: 50px 0px;
   height: 100%;
 }
+.major-event{
+  background-color: #e2e2e2;
+  padding:10px 10px;  
+  width: 40vw;
+}
+.major-event img {
+  height: 300px;
+  object-fit: cover;
+}
+.major-event h3{
+  font-size: 25px;
+  color: var(--text-main);
+}
+.major-event h5{
+  font-size: 15px;
+}
 .event-view-button {
   border: none;
   border-radius: 0px;

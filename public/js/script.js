@@ -118,40 +118,44 @@ function seeMoreEvents(isMore) {
 
 }
 
-function readMore(num) {
-    var elemet = document.getElementById("more-info-event");
-    elemet.style.opacity = 1;
-    elemet.style.display = "flex";
-
-    var html = `<img src="${moreEvents[num].bgImg}" />
-    <div class="flex-col event-header">
-        <h2>${moreEvents[num].title}</h2>
-        <div class="flex-row " style="align-items:center;gap:5px">
-            <i class="uil uil-location-point"></i>
-            <h4 style="font-size: 14px">${moreEvents[num].location}</h4>
-        </div>
-        <div class="flex-row " style="align-items:center;gap:5px">
-            <i class="uil uil-calendar-alt"></i>
-            <h4 style="font-size: 14px">${moreEvents[num].date}</h4>
-        </div>
-      <p>
-      ${moreEvents[num].description} 
-      </P>
-      <button onclick="readLess()">Read Less</button>
-    </div>`
-    setTimeout(function () {
-        elemet.innerHTML = html
-    }, 250);
-    gsap.to(window,
-        {
-            duration: .4,
-            scrollTo: {
-                y: "#more-info-event",
-                offsetY: 200
-            }
-        }
-    )
+function readMore(ok){
+    console.log(ok.name);
 }
+
+// function readMore(num) {
+//     var elemet = document.getElementById("more-info-event");
+//     elemet.style.opacity = 1;
+//     elemet.style.display = "flex";
+
+//     var html = `<img src="${moreEvents[num].bgImg}" />
+//     <div class="flex-col event-header">
+//         <h2>${moreEvents[num].title}</h2>
+//         <div class="flex-row " style="align-items:center;gap:5px">
+//             <i class="uil uil-location-point"></i>
+//             <h4 style="font-size: 14px">${moreEvents[num].location}</h4>
+//         </div>
+//         <div class="flex-row " style="align-items:center;gap:5px">
+//             <i class="uil uil-calendar-alt"></i>
+//             <h4 style="font-size: 14px">${moreEvents[num].date}</h4>
+//         </div>
+//       <p>
+//       ${moreEvents[num].description} 
+//       </P>
+//       <button onclick="readLess()">Read Less</button>
+//     </div>`
+//     setTimeout(function () {
+//         elemet.innerHTML = html
+//     }, 250);
+//     gsap.to(window,
+//         {
+//             duration: .4,
+//             scrollTo: {
+//                 y: "#more-info-event",
+//                 offsetY: 200
+//             }
+//         }
+//     )
+// }
 function readLess() {
     var elemet = document.getElementById("more-info-event");
     elemet.innerHTML = "";
