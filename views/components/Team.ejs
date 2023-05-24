@@ -43,13 +43,13 @@
     <% for (var i = 0; i < data.leaders.length; i++ ) { %>
     <div class="leaders flex-col">
       <div class="links-card">
-        <a href="https://www.linkedin.com/in/sawurawv/" target="_blank"
+        <a href="<%= data.leaders[i].linkedInLink %>" target="_blank"
           ><i class="uil uil-linkedin"></i
         ></a>
-        <a href="mailto:np03cs4s210026@heraldcollege.edu.np" target="_blank">
+        <a href="<%= data.leaders[i].mailLink %>" target="_blank">
           <i class="uil uil-envelope"></i
         ></a>
-        <a href="https://www.instagram.com/mr.sawurawv/" target="_blank"
+        <a href="<%= data.leaders[i].instagramLink %>" target="_blank"
           ><i class="uil uil-instagram"></i
         ></a>
       </div>
@@ -61,155 +61,24 @@
   </div>
   <h2>Department Head</h2>
   <div class="flex-row heads">
+    <% for (var i = 0; i < data.heads.length; i++ ) { %>
     <div class="department-team flex-col">
       <div class="department-links-card">
-        <a href="https://www.linkedin.com/in/sawurawv/" target="_blank"
+        <a href="<%= data.heads[i].linkedInLink %>" target="_blank"
           ><i class="uil uil-linkedin"></i
         ></a>
-        <a href="mailto:np03cs4s210026@heraldcollege.edu.np" target="_blank">
+        <a href="<%= data.heads[i].mailLink %>" target="_blank">
           <i class="uil uil-envelope"></i
         ></a>
-        <a href="https://www.instagram.com/mr.sawurawv/" target="_blank"
+        <a href="<%= data.heads[i].instagramLink %>" target="_blank"
           ><i class="uil uil-instagram"></i
         ></a>
       </div>
-      <img src="/image/team/Saurav_Adhikari.png" />
-      <h5>Saurav Adhikari</h5>
-      <h4>Design Head</h4>
+      <img src="<%= data.heads[i].img %>" />
+      <h5><%= data.heads[i].name %></h5>
+      <h4><%= data.heads[i].department %></h4>
     </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a href="https://www.linkedin.com/in/mrj100/" target="_blank">
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4s210095@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/_ashim.baral__/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Ashim_Baral.png" />
-      <h5>Ashim Baral</h5>
-      <h4>Logistic Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/sameer-adhikari-847a75163/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4s210311@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/paw_som/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Sameer_Adhikari.png" />
-      <h5>Sammer Adhikari</h5>
-      <h4>Photography Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/gaurav-thapaliya-075699210/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4s210070@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/gaurav_thapaliya_/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Gaurav_Thapaliya.png" />
-      <h5>Gaurav Thapaliya</h5>
-      <h4>Marketing Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/paruhang-rai-b7a38a212/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4s210088@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/rai__paruhang/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Paruhang_Rai.png" />
-      <h5>Paruhang Rai</h5>
-      <h4>Finance Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/punam-katuwal-796b26211/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4s210211@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/punam__chettri/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Punam_Katuwal.png" />
-      <h5>Punam Katuwal</h5>
-      <h4>Research Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/prajwol-neupane-b64418208/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i>
-        </a>
-        <a href="mailto:np03cs4a220031@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/iamprajwolneupane/?hl=en"
-          target="_blank"
-        >
-          <i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Prajwol_Neupane.png" />
-      <h5>Prajwol Neupane</h5>
-      <h4>Development Head</h4>
-    </div>
-    <div class="department-team flex-col">
-      <div class="department-links-card">
-        <a
-          href="https://www.linkedin.com/in/aashan-bajgain-94ab55259/"
-          target="_blank"
-        >
-          <i class="uil uil-linkedin"></i
-        ></a>
-        <a href="mailto:np03cs4a220002@heraldcollege.edu.np" target="_blank">
-          <i class="uil uil-envelope"></i
-        ></a>
-        <a href="https://www.instagram.com/itsssonmee/" target="_blank"
-          ><i class="uil uil-instagram"></i
-        ></a>
-      </div>
-      <img src="/image/team/Aashan_Bajgain.png" />
-      <h5>Aashan Bajgain</h5>
-      <h4>Videography Head</h4>
-    </div>
+    <% } %>
   </div>
   <h2>Members</h2>
   <div class="swiper member-swiper" style="width: 70%" id="member">

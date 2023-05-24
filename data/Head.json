@@ -1,0 +1,66 @@
+[
+    {
+        "name":"Saurav Adhikari",
+        "img":"/image/team/Saurav_Adhikari.png",
+        "department":"Design Head",
+        "linkedInLink":"https://www.linkedin.com/in/sawurawv/",
+        "mailLink":"mailto:np03cs4s210026@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/mr.sawurawv/"
+    },
+    {
+        "name":"Ashim Baral",
+        "img":"/image/team/Ashim_Baral.png",
+        "department":"Logistic Head",
+        "linkedInLink":"https://www.linkedin.com/in/mrj100/",
+        "mailLink":"mailto:np03cs4s210095@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/_ashim.baral__/"
+    },
+    {
+        "name":"Sameer Adhikari",
+        "img":"/image/team/Sameer_Adhikari.png",
+        "department":"Photography Head",
+        "linkedInLink":"https://www.linkedin.com/in/sameer-adhikari-847a75163/",
+        "mailLink":"mailto:np03cs4s210311@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/paw_som/"
+    },
+    {
+        "name":"Gaurav Thapaliya",
+        "department":"Marketing Head",
+        "img":"/image/team/Gaurav_Thapaliya.png",
+        "linkedInLink":"https://www.linkedin.com/in/gaurav-thapaliya-075699210/",
+        "mailLink":"mailto:np03cs4s210070@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/gaurav_thapaliya_/"
+    },
+    {
+        "name":"Paruhang Rai",
+        "department":"Finance Head",
+        "img":"/image/team/Paruhang_Rai.png",
+        "linkedInLink":"https://www.linkedin.com/in/paruhang-rai-b7a38a212/",
+        "mailLink":"mailto:np03cs4s210088@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/rai__paruhang/"
+    },
+    {
+        "name":"Punam Katuwal",
+        "department":"Research Head",
+        "img":"/image/team/Punam_Katuwal.png",
+        "linkedInLink":"https://www.linkedin.com/in/punam-katuwal-796b26211/",
+        "mailLink":"mailto:np03cs4s210211@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/punam__chettri/"
+    },
+    {
+        "name":"Prajwol Neupane",
+        "department":"Development Head",
+        "img":"/image/team/Prajwol_Neupane.png",
+        "linkedInLink":"https://www.linkedin.com/in/prajwol-neupane-b64418208/",
+        "mailLink":"mailto:np03cs4a220031@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/iamprajwolneupane/?hl=en"
+    },
+    {
+        "name":"Aashan Bajgain",
+        "department":"Videography Head",
+        "img":"/image/team/Aashan_Bajgain.png",
+        "linkedInLink":"https://www.linkedin.com/in/aashan-bajgain-94ab55259/",
+        "mailLink":"mailto:np03cs4a220002@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/itsssonmee/"
+    }
+]
