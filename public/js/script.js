@@ -75,7 +75,7 @@ function seeMoreEvents(isMore) {
                 <h5 style="font-size: 14px">${curr.date}</h5>
               </div>
               <h5>
-                ${curr.description.substr(0, 180) + "..."}
+                ${curr.description.substr(0, 220) + "..."}
               </h5>
               <button onclick="readMore(${indx})">Read More</button>
             </div>
