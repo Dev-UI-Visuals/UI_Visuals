@@ -3,7 +3,7 @@
     width: 45%;
   }
   .major-event{
-    width: 50vw;
+    width: 40vw;
   }
   .top-events {
     gap: 2%;
@@ -82,7 +82,7 @@
     width: 160px;
   }
   .major-event{
-    width: 60vw;
+    width: 50vw;
   }
   .single-event {
     width: 350px;
@@ -242,7 +242,7 @@
     height: 40%;
   }
   .major-event{
-    width: 70vw;
+    width: 60vw;
   }
   .event-header {
     justify-content: space-between;
@@ -296,7 +296,7 @@
     padding: 20px 5%;
   }
   .major-event{
-    width: 80vw;
+    width: 70vw;
   }
   .about-image{
     width: 300px;
@@ -448,7 +448,7 @@
     font-size: 40px !important;
   }
   .major-event{
-    width: 90vw;
+    width: 80vw;
   }
   .single-event {
     height: 100%;

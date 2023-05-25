@@ -11,12 +11,11 @@
       <i class="uil uil-calendar-alt"></i>
       <h5 style="font-size: 14px"><%= data.majorEvents[0].date %></h5>
     </div>
-    <h5><%= data.majorEvents[0].description[0].substring(0, 300) %>...</h5>
-    <a href='event/<%= data.majorEvents[0].id %>' target="_blank"><button>Read More</button></a>
+    <h5><%= data.majorEvents[0].description[0].substring(0, 220) %>...</h5>
+    <button><a href='event/<%= data.majorEvents[0].id %>' target="_blank">Read More</a></button>
   </div>
-  <div class="top-events flex-row">
-   
-    <% for (var i = 0; i < data.events.length; i++ ) { %>
+  <div class="top-events flex-row" id="top-events">
+    <% for (var i = 0; i < 3; i++ ) { %>
     <div class="single-event flex-col">
       <div class="event-title">
         <h3><%= data.events[i].name %></h3>
