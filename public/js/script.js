@@ -166,3 +166,9 @@ function readLess() {
         }
     )
 }
+
+const getYear = () => {
+    var elemet = document.getElementById("year");
+    elemet.innerText = new Date().getFullYear();
+}
+getYear();

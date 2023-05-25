@@ -738,6 +738,9 @@
   text-align: left;
   font-size: 15px;
 }
+.contact a {
+  color: var(--primary-mid);
+}
 .footer-line {
   width: 100%;
   position: absolute;
