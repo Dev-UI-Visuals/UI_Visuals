@@ -224,7 +224,7 @@
 .teacher {
   align-items: center;
   width: 50%;
-  margin: 0px auto;
+  margin: 40px auto;
   justify-content: space-between;
 }
 .links-teacher {
@@ -451,7 +451,7 @@
 .event {
   background: linear-gradient(var(--primary-mid), var(--primary-main));
   align-items: center;
-  gap: 80px;
+  gap: 30px;
   padding: 50px 0px;
   height: 100%;
 }
@@ -501,7 +501,6 @@
   -moz-text-fill-color: transparent;
   letter-spacing: -1px;
 }
-
 .top-events {
   width: 80%;
   margin: 0px auto;

@@ -1,27 +1,14 @@
 <div class="event flex-col" id="event">
   <h1 id="event-fade">Events</h1>
-  <div class="flex-col major-event">
-    <img src="<%= data.majorEvents[0].headerImage %>" />
-    <h3><%= data.majorEvents[0].title %></h3>
-    <div class="flex-row events-icons">
-      <i class="uil uil-location-point"></i>
-      <h5 style="font-size: 14px"><%= data.majorEvents[0].location %></h5>
-    </div>
-    <div class="flex-row events-icons">
-      <i class="uil uil-calendar-alt"></i>
-      <h5 style="font-size: 14px"><%= data.majorEvents[0].date %></h5>
-    </div>
-    <h5><%= data.majorEvents[0].description[0].substring(0, 220) %>...</h5>
-    <button><a href='event/<%= data.majorEvents[0].id %>' target="_blank">Read More</a></button>
-  </div>
   <div class="top-events flex-row" id="top-events">
     <% for (var i = 0; i < 3; i++ ) { %>
     <div class="single-event flex-col">
       <div class="event-title">
-        <h3><%= data.events[i].name %></h3>
+        <h3><%= data.events[i].type%></h3>
       </div>
       <img src="<%= data.events[i].profileImage %>" />
       <div class="single-event-content flex-col">
+        <h3><%= data.events[i].name %></h3>
         <div class="flex-row events-icons">
           <i class="uil uil-location-point"></i>
           <h5 style="font-size: 14px"><%= data.events[i].location %></h5>
@@ -30,7 +17,7 @@
           <i class="uil uil-calendar-alt"></i>
           <h5 style="font-size: 14px"><%= data.events[i].date %></h5>
         </div>
-        <h5><%= data.events[i].description.substring(0, 220) %>..</h5>
+        <h5><%= data.events[i].description[0].substring(0, 220) %>..</h5>
         <button onclick="readMore(`<%= i %>`)">Read More</button>
       </div>
     </div>

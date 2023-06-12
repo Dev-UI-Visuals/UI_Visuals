@@ -11,7 +11,6 @@ app.use(express.static(__dirname + '/public'));
 app.get("/", async function (req, res) {
     var allData = { leaders: [], members: [],heads:[],testimonials:[],events:[],majorEvents:[] };
     try{
-        allData.majorEvents = JSON.parse( await fs.promises.readFile(("data/MajorEvents.json"),'utf-8'));
         allData.events = JSON.parse( await fs.promises.readFile(("data/Events.json"),'utf-8'));
         allData.leaders = JSON.parse( await fs.promises.readFile(("data/Leader.json"),'utf-8'));
         allData.members = JSON.parse( await fs.promises.readFile(("data/Member.json"),'utf-8'));
@@ -22,13 +21,13 @@ app.get("/", async function (req, res) {
     }catch(e){
         return res.render("error");
     }
-
+ JSON.parse( await fs.promises.readFile(("data/Events.json"),'utf-8'));
 });
 
 app.get("/event/:name", function (req, res) {
     var name = req.params.name;
 
-    fs.readFile("data/MajorEvents.json", 'utf-8', (error, data) => {
+    fs.readFile("data/Events.json", 'utf-8', (error, data) => {
         if (error) {
             return res.render("error");
         } else {

@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <%- include('./components/Header') %>
-    <title>UI Visuals || <%= data.title %></title>
+    <title>UI Visuals || <%= data.name %></title>
   </head>
   <body>
     <div class="nav fixed flex-row">
-      <!-- Div nav-img contain headding nav images  -->
+      <!-- Div nav-img contain heading nav images  -->
       <div class="nav-img flex-row">
         <img src="/image/DEV_BLACK.png" class="dev" />
         <div class="nav-line"></div>
@@ -14,54 +14,51 @@
       </div>
       <!-- Div nav-items contain links for scroll navigation -->
       <div class="nav-items flex-row">
-        <a href="/"> <h4>Home</h4></a>
-        <a href="/"> <h4>About</h4></a>
-        <a href="/"> <h4>Events</h4></a>
-        <a href="/"> <h4>Team</h4></a>
-        <a href="/"> <h4>Contact</h4></a>
+        <a href="/"><h4>Home</h4></a>
+        <a href="/"><h4>About</h4></a>
+        <a href="/"><h4>Events</h4></a>
+        <a href="/"><h4>Team</h4></a>
+        <a href="/"><h4>Contact</h4></a>
       </div>
     </div>
     <div class="flex-col event-page">
       <h2>OUR EVENT MEMORIES</h2>
-      <img
-        src=<%= data.headerImage %>
-        class="profile-image"
-      />
+      <img src="<%= data.headerImage %>" class="profile-image" />
       <h2><%= data.title %></h2>
       <div class="flex-col event-page-icons">
-        <span
-          ><div class="flex-row" style="align-items: center; gap: 5px">
+        <span>
+          <div class="flex-row" style="align-items: center; gap: 5px">
             <i class="uil uil-map-marker"></i>
             <p><%= data.location %></p>
-          </div></span
-        >
-        <span
-          ><div class="flex-row" style="align-items: center; gap: 5px">
-            <i class="uil uil-calender"></i>
+          </div>
+        </span>
+        <span>
+          <div class="flex-row" style="align-items: center; gap: 5px">
+            <i class="uil uil-calendar"></i>
             <p><%= data.date %></p>
-          </div></span
-        >
+          </div>
+        </span>
       </div>
       <div class="flex-col event-content">
         <p><%= data.description[0] %></p>
         <div class="flex-row event-image-gallery">
-          <% for (var i = 0; i < data.images.length; i++ ) { %>
-            <img src=<%= data.images[i] %>
-            />
+          <% for (var i = 0; i < data.images.length; i++) { %>
+            <img src="<%= data.images[i] %>" />
           <% } %>
         </div>
-        <% for (var i = 1; i < data.description.length; i++ ) { %>
+        <% for (var i = 1; i < data.description.length; i++) { %>
           <p><%= data.description[i] %></p>
-          
         <% } %>
-        <iframe
-          src="https://www.youtube.com/embed/<%= data.youtubeCode %>"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <% if (data.youtubeCode) { %>
+          <iframe
+            src="https://www.youtube.com/embed/<%= data.youtubeCode %>"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        <% } %>
       </div>
     </div>
-    <%- include('./components/Contact') %>
+    <% include('./components/Contact') %>
   </body>
 </html>
