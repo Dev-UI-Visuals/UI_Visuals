@@ -126,7 +126,7 @@
   margin-top: 40px;
   width: 80%;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 150%;
 }
 .about-pick {
@@ -169,7 +169,7 @@
   width: 100%;
   align-items: center;
   padding: 50px 0px;
-  gap: 30px;
+  gap: 40px;
 }
 .departments h2 {
   font-size: 60px;
@@ -188,6 +188,7 @@
   padding: 20px;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  gap: 10px;
 }
 .department-item img {
   width: 40px;
@@ -412,7 +413,7 @@
   background: linear-gradient(var(--primary-mid), var(--primary-main));
   width: 80%;
   padding: 0px 10% 50px 10%;
-  gap: 30px;
+  gap: 40px;
 }
 .why h2 {
   font-size: 60px;
@@ -450,7 +451,7 @@
 .event {
   background: linear-gradient(var(--primary-mid), var(--primary-main));
   align-items: center;
-  gap: 30px;
+  gap: 80px;
   padding: 50px 0px;
   height: 100%;
 }
