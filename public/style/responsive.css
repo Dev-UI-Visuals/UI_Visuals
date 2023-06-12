@@ -34,12 +34,6 @@
   }
 }
 
-@media screen and (min-width: 800px) {
-  .less {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .nav {
     width: 95%;
@@ -153,12 +147,6 @@
   }
   .team h1 {
     font-size: 60px;
-  }
-  .more {
-    display: none;
-  }
-  .less {
-    display: block;
   }
   .about-pick {
     display: none;

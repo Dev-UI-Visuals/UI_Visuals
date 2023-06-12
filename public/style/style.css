@@ -123,9 +123,11 @@
   object-fit: cover;
 }
 .about p {
+  margin-top: 40px;
   width: 80%;
   text-align: center;
   font-size: 18px;
+  line-height: 150%;
 }
 .about-pick {
   width: 300px;
@@ -156,8 +158,10 @@
 .black-circle-dots {
   position: absolute;
   right: 0%;
-  top: 160%;
+  top: 110%;
   object-fit: contain;
+  width: 150px;
+  display: none;
 }
 /* Department */
 .departments {
