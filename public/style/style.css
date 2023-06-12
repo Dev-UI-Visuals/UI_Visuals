@@ -526,8 +526,7 @@
 
   gap: 2px;
 }
-.single-event-content button,
-.major-event button {
+.single-event-content button {
   background-color: var(--text-light);
   color: var(--primary-light);
   border: none;
@@ -537,13 +536,6 @@
   margin: 0px auto;
   transition: 0.5s;
   margin-top: 10px;
-}
-.major-event button a {
-  color: var(--primary-light);
-}
-.single-event-content button:hover,
-.major-event button:hover {
-  background-color: var(--text-main);
 }
 .event-title {
   position: absolute;
@@ -563,6 +555,11 @@
   color: var(--text-main);
   line-height: 120%;
 }
+.single-event-content h3{
+  font-size: 18px;
+  color: var(--text-main);
+  line-height: 100%; 
+}
 .events-icons {
   color: var(--text-main);
   gap: 5px;
@@ -571,6 +568,9 @@
 }
 .events-icons i {
   font-size: 16px;
+}
+.single-event a {
+  margin: 0px auto;
 }
 .more-info-event {
   transition: 0.5s;

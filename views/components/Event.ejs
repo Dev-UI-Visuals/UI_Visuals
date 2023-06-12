@@ -18,7 +18,9 @@
           <h5 style="font-size: 14px"><%= data.events[i].date %></h5>
         </div>
         <h5><%= data.events[i].description[0].substring(0, 220) %>..</h5>
-        <button onclick="readMore(`<%= i %>`)">Read More</button>
+        <a href="/event/<%= data.events[i].id %>" target="_blank">
+          <button>Read More</button>
+        </a>
       </div>
     </div>
     <% } %>
