@@ -92,7 +92,7 @@ var moreEvents = [
     }
 ]
 
-
+//Working
 function setButton(isMore) {
     var ButtonDiv = document.getElementById("button");
     if (isMore) {
