@@ -55,7 +55,7 @@
         "location": "Herald College, Naxal",
         "headerImage": "/image/events/Photoshop_Session_1.png",
         "profileImage": "/image/events/Photoshop_Session.png",
-        "description": "UI Visuals successfully organized a session on Photoshop Session for beginners. The event provided an opportunity for participants to learn how to use Photoshop tools to edit and manipulate images, as well as design minimalistic posters. The session was beneficial for students who are starting their journey in design and editing, as well as those who want to become familiar with other Adobe software in the future. Participants were able to book their seats by filling out a form and joining the event. UI Visuals hopes that the knowledge and skills gained from this event will be useful for participants in their future design endeavors.",
+        "description": ["UI Visuals successfully organized a session on Photoshop Session for beginners. The event provided an opportunity for participants to learn how to use Photoshop tools to edit and manipulate images, as well as design minimalistic posters. The session was beneficial for students who are starting their journey in design and editing, as well as those who want to become familiar with other Adobe software in the future. Participants were able to book their seats by filling out a form and joining the event. UI Visuals hopes that the knowledge and skills gained from this event will be useful for participants in their future design endeavors."],
         "youtubeCode": null,
         "images": []
     },

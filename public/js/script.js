@@ -5,7 +5,7 @@ var moreEvents = [
     {
         "id": "herald-code-brisk-hackathon",
         "name": "Herald Code Brisk Hackathon",
-        "type":"Major Event",
+        "type": "Major Event",
         "location": "Kuri Village, Kalinchowk",
         "date": "2023-04-23",
         "headerImage": "https://heraldcollege.edu.np/storage/post/HCK-Code-Brisk-post_1676978748.jpg",
@@ -25,7 +25,7 @@ var moreEvents = [
     {
         "id": "upc-design-hunt",
         "name": "UPC Design Hunt",
-        "type":"Minor Event",
+        "type": "Minor Event",
         "location": "Herald College, Naxal",
         "date": "2023-02-09",
         "headerImage": "/image/events/UPC_Design_Hunt_1.png",
@@ -39,7 +39,7 @@ var moreEvents = [
     {
         "id": "vision-quest",
         "name": "Vision Quest",
-        "type":"Minor Event",
+        "type": "Minor Event",
         "location": "Herald College, Naxal",
         "date": "2022-09-01",
         "headerImage": "/image/events/Vision_Quest_1.png",
@@ -53,19 +53,19 @@ var moreEvents = [
     {
         "id": "photoshop-session",
         "name": "Photoshop Session",
-        "type":"Minor Event",
+        "type": "Minor Event",
         "date": "2022-04-12",
         "location": "Herald College, Naxal",
         "headerImage": "/image/events/Photoshop_Session_1.png",
         "profileImage": "/image/events/Photoshop_Session.png",
-        "description": "UI Visuals successfully organized a session on Photoshop Session for beginners. The event provided an opportunity for participants to learn how to use Photoshop tools to edit and manipulate images, as well as design minimalistic posters. The session was beneficial for students who are starting their journey in design and editing, as well as those who want to become familiar with other Adobe software in the future. Participants were able to book their seats by filling out a form and joining the event. UI Visuals hopes that the knowledge and skills gained from this event will be useful for participants in their future design endeavors.",
+        "description": ["UI Visuals successfully organized a session on Photoshop Session for beginners. The event provided an opportunity for participants to learn how to use Photoshop tools to edit and manipulate images, as well as design minimalistic posters. The session was beneficial for students who are starting their journey in design and editing, as well as those who want to become familiar with other Adobe software in the future. Participants were able to book their seats by filling out a form and joining the event. UI Visuals hopes that the knowledge and skills gained from this event will be useful for participants in their future design endeavors."],
         "youtubeCode": null,
         "images": []
     },
     {
         "id": "photography-session",
         "name": "Photography Session",
-        "type":"Minor Event",
+        "type": "Minor Event",
         "date": "2021-11-01",
         "location": "Kumari Hall",
         "headerImage": "/image/Events/Photography_Session_1.png",
@@ -77,9 +77,9 @@ var moreEvents = [
         "images": []
     },
     {
-        "id":"figma-session",
+        "id": "figma-session",
         "name": "Figma Session",
-        "type":"Minor Event",
+        "type": "Minor Event",
         "date": "2021-09-28",
         "location": "Herald College, Naxal",
         "headerImage": "/image/events/Figma_Session_1.png",
@@ -106,34 +106,62 @@ setButton(true);
 function seeMoreEvents(isMore) {
     var EventsElement = document.getElementById("events");
     if (isMore) {
-        console.log(moreEvents);
-        moreEvents.forEach((curr, indx) => {
-            if (indx > 2) {
-                EventsElement.innerHTML += `<div class="single-event flex-col">
+        for (let i = 3; i < moreEvents.length - 1; i++) {
+            console.log(i);
+            console.log(moreEvents[i]);
+            EventsElement.innerHTML += `<div class="single-event flex-col">
             <div class="event-title">
-              <h3>${curr.type}</h3>
+              <h3>${moreEvents[i].type}</h3>
             </div>
-            <img src="${curr.profileImage}" />
+            <img src="${moreEvents[i].profileImage}" />
             <div class="single-event-content flex-col">
-            <h3>${curr.name}</h3>
+            <h3>${moreEvents[i].name}</h3>
               <div class="flex-row events-icons">
                 <i class="uil uil-location-point"></i>
-                <h5 style="font-size: 14px">${curr.location}</h5>
+                <h5 style="font-size: 14px">${moreEvents[i].location}</h5>
               </div>
               <div class="flex-row events-icons">
                 <i class="uil uil-calendar-alt"></i>
-                <h5 style="font-size: 14px">${curr.date}</h5>
+                <h5 style="font-size: 14px">${moreEvents[i].date}</h5>
               </div>
               <h5>
-                ${curr.description.substr(0, 220) + "..."}
+                ${moreEvents[i].description[0].substr(0, 220) + "..."}
               </h5>
-              <button onclick="readMore(${indx})">Read More</button>
+              <a href=${"/event/" + moreEvents[i]?.id} target="_blank">
+              <button>Read More</button>
+            </a>
             </div>
           </div>`
-            }
 
-        })
-        setButton(false)
+        }
+        // moreEvents.forEach((curr, indx) => {
+        //     if (indx > 2) {
+        //         EventsElement.innerHTML += `<div class="single-event flex-col">
+        //     <div class="event-title">
+        //       <h3>${curr.type}</h3>
+        //     </div>
+        //     <img src="${curr.profileImage}" />
+        //     <div class="single-event-content flex-col">
+        //     <h3>${curr.name}</h3>
+        //       <div class="flex-row events-icons">
+        //         <i class="uil uil-location-point"></i>
+        //         <h5 style="font-size: 14px">${curr.location}</h5>
+        //       </div>
+        //       <div class="flex-row events-icons">
+        //         <i class="uil uil-calendar-alt"></i>
+        //         <h5 style="font-size: 14px">${curr.date}</h5>
+        //       </div>
+        //       <h5>
+        //         ${curr.description.substr(0, 220) + "..."}
+        //       </h5>
+        //       <a href=${"/event/" + curr?.id} target="_blank">
+        //       <button>Read More</button>
+        //     </a>
+        //     </div>
+        //   </div>`
+        //     }
+        // })
+        setButton(false);
         gsap.to(window,
             {
                 duration: .4,
@@ -161,58 +189,6 @@ function seeMoreEvents(isMore) {
 
 }
 
-function readMore(num) {
-    var elemet = document.getElementById("more-info-event");
-    elemet.style.opacity = 1;
-    elemet.style.display = "flex";
-
-    var html = `<img src="${moreEvents[num].headerImage}" />
-    <div class="flex-col event-header">
-        <h2>${moreEvents[num].name}</h2>
-        <div class="flex-row " style="align-items:center;gap:5px">
-            <i class="uil uil-location-point"></i>
-            <h4 style="font-size: 14px">${moreEvents[num].location}</h4>
-        </div>
-        <div class="flex-row " style="align-items:center;gap:5px">
-            <i class="uil uil-calendar-alt"></i>
-            <h4 style="font-size: 14px">${moreEvents[num].date}</h4>
-        </div>
-      <p>
-      ${moreEvents[num].description} 
-      </P>
-      <button onclick="readLess()">Read Less</button>
-    </div>`
-    setTimeout(function () {
-        elemet.innerHTML = html
-    }, 250);
-    gsap.to(window,
-        {
-            duration: .4,
-            scrollTo: {
-                y: "#more-info-event",
-                offsetY: 200
-            }
-        }
-    )
-}
-
-function readLess() {
-    var elemet = document.getElementById("more-info-event");
-    elemet.innerHTML = "";
-    setTimeout(function () {
-        elemet.style.opacity = 0;
-        elemet.style.display = "none";
-    }, 100);
-    gsap.to(window,
-        {
-            duration: .4,
-            scrollTo: {
-                y: `#top-events`,
-                offsetY: 0
-            }
-        }
-    )
-}
 
 const getYear = () => {
     var elemet = document.getElementById("year");
