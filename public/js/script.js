@@ -134,33 +134,6 @@ function seeMoreEvents(isMore) {
           </div>`
 
         }
-        // moreEvents.forEach((curr, indx) => {
-        //     if (indx > 2) {
-        //         EventsElement.innerHTML += `<div class="single-event flex-col">
-        //     <div class="event-title">
-        //       <h3>${curr.type}</h3>
-        //     </div>
-        //     <img src="${curr.profileImage}" />
-        //     <div class="single-event-content flex-col">
-        //     <h3>${curr.name}</h3>
-        //       <div class="flex-row events-icons">
-        //         <i class="uil uil-location-point"></i>
-        //         <h5 style="font-size: 14px">${curr.location}</h5>
-        //       </div>
-        //       <div class="flex-row events-icons">
-        //         <i class="uil uil-calendar-alt"></i>
-        //         <h5 style="font-size: 14px">${curr.date}</h5>
-        //       </div>
-        //       <h5>
-        //         ${curr.description.substr(0, 220) + "..."}
-        //       </h5>
-        //       <a href=${"/event/" + curr?.id} target="_blank">
-        //       <button>Read More</button>
-        //     </a>
-        //     </div>
-        //   </div>`
-        //     }
-        // })
         setButton(false);
         gsap.to(window,
             {
