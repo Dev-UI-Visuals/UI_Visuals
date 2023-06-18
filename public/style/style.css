@@ -229,7 +229,6 @@
 }
 .links-teacher {
   width: 200px;
-  height: 0px;
   position: absolute;
   background-color: rgb(56, 54, 54, 0.5);
   z-index: 2;
@@ -239,6 +238,8 @@
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  height: 180px;
+  opacity: 0;
 }
 /* Nice */
 .links-teacher i {
@@ -247,7 +248,7 @@
   transition: 0.5s;
 }
 .mentor:hover .links-teacher {
-  height: 180px;
+  opacity: 1;
 }
 .mentor:hover .links-teacher i {
   font-size: 30px;
@@ -308,7 +309,7 @@
   object-fit: cover;
 }
 .leaders:hover .links-card {
-  height: 180px;
+  opacity: 1;
 }
 .links-card i {
   color: white;
@@ -326,10 +327,11 @@
   justify-content: center;
   position: absolute;
   width: 180px;
-  height: 0px;
+  opacity: 0;
   background-color: rgb(56, 54, 54, 0.5);
   transition: 0.5s;
   cursor: pointer;
+  height: 180px;
 }
 
 .leaders h5 {
@@ -373,10 +375,11 @@
   justify-content: center;
   position: absolute;
   width: 180px;
-  height: 0px;
+  height: 180px;
   background-color: rgb(56, 54, 54, 0.5);
   transition: 0.5s;
   cursor: pointer;
+  opacity: 0;
 }
 .department-links-card i {
   color: white;
@@ -384,7 +387,7 @@
   transition: 0.5s;
 }
 .department-team:hover .department-links-card {
-  height: 180px;
+  opacity: 1;
 }
 .department-team:hover i {
   font-size: 25px;
@@ -758,6 +761,7 @@
   width: 70%;
   padding: 20px 15%;
   background: linear-gradient(var(--primary-mid), var(--primary-main));
+  gap:20px
 }
 .fixed {
   background-color: var(--primary-mid) !important;

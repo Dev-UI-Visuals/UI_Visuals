@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <%- include('./components/Header') %>
-    <title>UI Visuals || <%= data.name %></title>
+    <title>UI Visuals | <%= data.name %></title>
   </head>
   <body>
     <div class="nav fixed flex-row">
@@ -24,8 +24,8 @@
     <div class="flex-col event-page">
       <h2>OUR EVENT MEMORIES</h2>
       <img src="<%= data.headerImage %>" class="profile-image" />
-      <h2><%= data.title %></h2>
       <div class="flex-col event-page-icons">
+        <h2><%= data.name %></h2>
         <span>
           <div class="flex-row" style="align-items: center; gap: 5px">
             <i class="uil uil-map-marker"></i>
@@ -59,6 +59,5 @@
         <% } %>
       </div>
     </div>
-    <% include('./components/Contact') %>
   </body>
 </html>
